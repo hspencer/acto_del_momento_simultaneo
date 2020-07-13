@@ -33,17 +33,20 @@ function setup() {
   sketch.parent('p5');
   background("pink");
   
-// acá deberíamos pasar los datos a los objetos de class Note
-  
-  
-  /*
-  let noteData = [];
-  noteData = data.query.results.slice(); // no funca
-  for (let i = 0; i < noteData.length; i++) {
-
+  // acá deberíamos pasar los datos a los objetos de class Note
+  let notes  = []; 
+  for ( let key in data.query.results ){
+    let thisResult = data.query.results[ key ];
+    let thisNote = new Note( 
+      thisResult.printouts['Posición'][0].lat,
+      thisResult.printouts['Posición'][0].lon,
+      thisResult.fulltext,
+      thisResult.printouts['Autor'][0].fulltext
+    );
+    notes.push( thisNote );
   }
-  */
-  
+
+  // ...
 }
 
 function windowResized() {
