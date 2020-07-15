@@ -5,8 +5,10 @@ let w, h;
 
 class Note {
   constructor(lat, lon, title, text, author) {
-    this.x = map(lon, minlon, maxlon, 20, w - 20); 
-    this.y = map(lat, minlat, maxlat, h - 20, 20); 
+    
+    let margin = 100; 
+    this.x = map(lon, minlon, maxlon, margin, w - margin); 
+    this.y = map(lat, minlat, maxlat, h - margin, margin); 
     
     this.title = title; 
     this.text = text; 
@@ -27,10 +29,10 @@ class Note {
     textAlign(CENTER);
     if(this.over){
       strokeWeight(2);
-      fill("red");
+      fill("gray");
     }else{
       noStroke();
-      fill("white");
+      fill("lightgray");
     }
     rect(this.x, this.y, this.w, this.h);
     fill("black");
@@ -107,7 +109,7 @@ function windowResized() {
 
 function draw() {
 
-  background("pink");
+  background("white");
   for (let i = 0; i  < notes.length; i++) {
     notes[i].display();
     notes[i].rollover(mouseX, mouseY);
