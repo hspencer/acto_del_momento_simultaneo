@@ -115,8 +115,8 @@ function setup() {
   //Engine.run(engine);
 
   boundaries.push(new Boundary(w / 2, height, width, 50, 0));
-  boundaries.push(new Boundary(-10, h / 2, 20, height, 0));
-  boundaries.push(new Boundary(w + 10, h / 2, 20, height, 0));
+  boundaries.push(new Boundary(-10, h / 2, 20, height * 5, 0));
+  boundaries.push(new Boundary(w + 10, h / 2, 20, height * 5, 0));
   
   // top bumps
   let tl = new Boundary(w * .2, 30, 50, 5, .3);
