@@ -119,13 +119,13 @@ function setup() {
   boundaries.push(new Boundary(w + 10, h / 2, 20, height * 5, 0));
   
   // top bumps
-  let tl = new Boundary(w * .2, 30, 50, 5, .3);
-  let tr = new Boundary(w * .8, 30, 50, 5, -.3);
-  // tl.show();
-  // tr.show();
-  boundaries.push(tl);
-  boundaries.push(tr);
-
+  let n = 8;
+  for(let i = 1; i < n; i++){
+    let spacer = w/n;
+    let tl = new Boundary(spacer * i, -10, 20, 10, random(-1, 1));
+    //tl.show();
+    boundaries.push(tl);
+  }
   createObjects();
 
   var canvasmouse = Mouse.create(sketch.elt);
@@ -156,10 +156,10 @@ function draw() {
     notes[i].display();
 
     if (mConstraint.body === notes[i].body) {
-      fill(255, 5);
+      fill(255, 3);
       rectMode(CORNER);
       noStroke();
-      rect(0, 0, w * .4, 165);
+      rect(0, 0, w, h);
       textAlign(LEFT);
       textSize(18);
       textStyle(BOLD);

@@ -4,7 +4,7 @@ class Note {
         // textStyle(BOLD);
         let margin = 50;
         this.x = random(margin, w - margin);//map(lon, minlon, maxlon, margin, w - margin);
-        this.y = random(-h * 5);//map(lat, minlat, maxlat, 0, -h * 5);
+        this.y = random(-100, -h * 2);//map(lat, minlat, maxlat, 0, -h * 5);
         this.title = title;
         this.text = text;
         this.author = author;
