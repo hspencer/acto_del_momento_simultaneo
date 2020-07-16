@@ -79,7 +79,7 @@ function createObjects() {
 function setup() {
   sketch = createCanvas(w, h);
   sketch.parent('p5');
-
+  textFont("Alegreya Sans");
   engine = Engine.create();
   world = engine.world;
   //Engine.run(engine);
@@ -103,7 +103,7 @@ function setup() {
 
 function windowResized() {
   w = document.getElementById("p5").offsetWidth;
-  h = w / 2;
+  h = 500; // w / 2;
   sketch = createCanvas(w, h);
   sketch.parent('p5');
   createObjects();
@@ -114,9 +114,25 @@ function draw() {
   background("white");
   for (let i = 0; i < notes.length; i++) {
     notes[i].display();
-  }
-}
 
-function keyTyped() {
-  console.log(data.query.results);
+    if(mConstraint.body === notes[i].body){
+      textAlign(LEFT);
+      textSize(18);
+      textStyle(BOLD);
+      fill(180, 30, 0)
+      text(notes[i].title, 50, 50);
+      textSize(36);
+      textStyle(NORMAL);
+      fill(30);
+      text(notes[i].text, 50, 100);//, 400, 400);
+    }
+  }
+
+  if (mConstraint.body) {
+    var pos = mConstraint.body.position;
+    var offset = mConstraint.constraint.pointB;
+    var m = mConstraint.mouse.position;
+    stroke(200, 150, 0);
+    line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
+  }
 }

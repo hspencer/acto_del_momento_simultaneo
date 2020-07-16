@@ -1,5 +1,7 @@
 class Note {
     constructor(lat, lon, title, text, author) {
+        textSize(22);
+        // textStyle(BOLD);
         let margin = 50;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, 0, -h * 5);
@@ -27,11 +29,13 @@ class Note {
         translate(pos.x, pos.y);
         rotate(angle);
         strokeWeight(1);
-        stroke(100);
+        stroke(190);
         fill(255);
-        rect(0, 0, this.w, this.h);
+        rect(0, 0, this.w, this.h, 3, 3, 3, 3);
         fill(0);
-        text(this.label, 0, 5);
+        textSize(22);
+        //textStyle(BOLD);
+        text(this.label, 0, 7);
         pop();
     }
 }
