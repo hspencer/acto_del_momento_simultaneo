@@ -3,8 +3,8 @@ class Note {
         textSize(22);
         // textStyle(BOLD);
         let margin = 50;
-        this.x = map(lon, minlon, maxlon, margin, w - margin);
-        this.y = map(lat, minlat, maxlat, 0, -h * 5);
+        this.x = random(margin, w - margin);//map(lon, minlon, maxlon, margin, w - margin);
+        this.y = random(-h * 5);//map(lat, minlat, maxlat, 0, -h * 5);
         this.title = title;
         this.text = text;
         this.author = author;
@@ -29,8 +29,8 @@ class Note {
         translate(pos.x, pos.y);
         rotate(angle);
         strokeWeight(1);
-        stroke(190);
-        fill(255);
+        stroke(190, 90);
+        fill(255, 90);
         rect(0, 0, this.w, this.h, 3, 3, 3, 3);
         fill(0);
         textSize(22);
