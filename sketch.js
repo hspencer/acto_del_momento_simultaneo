@@ -4,7 +4,6 @@
  *  2020
  */
 
-
 let sketch; // html canvas object
 let data;   // JSON data object
 let notes;  // array of visual objects
@@ -19,11 +18,13 @@ var Engine = Matter.Engine,
   MouseConstraint = Matter.MouseConstraint;
 
 // matter.js main components
-var engine;
-var world;
-var boundaries = [];
+let engine;
+let world;
+let boundaries = [];
 
+// typefaces
 let serif, sans, sansBold;
+
 function preload() {
   w = document.getElementById("p5").offsetWidth;
   h = document.getElementById("p5").offsetHeight;
@@ -34,6 +35,8 @@ function preload() {
   sans = loadFont("fonts/AlegreyaSans-Light.ttf");
   sansBold = loadFont("fonts/AlegreyaSans-Bold.ttf");
 }
+
+
 
 let minlat, maxlat, minlon, maxlon;
 
@@ -71,7 +74,6 @@ function createObjects() {
   }
 }
 
-
 function setup() {
   sketch = createCanvas(w, h);
   notes = [];
@@ -97,15 +99,15 @@ function setup() {
   */
   createObjects();
 
-  var canvasmouse = Mouse.create(sketch.elt);
+  let canvasmouse = Mouse.create(sketch.elt);
   canvasmouse.pixelRatio = pixelDensity();
   //console.log(canvasmouse);
-  var options = {
+  let options = {
     mouse: canvasmouse
   };
   mConstraint = MouseConstraint.create(engine, options);
   World.add(world, mConstraint);
-  console.log(mConstraint);
+  //console.log(mConstraint);
 }
 
 function windowResized() {
@@ -117,10 +119,7 @@ function windowResized() {
 }
 
 function draw() {
-
-  //if (counting) createOneByOne();
   Engine.update(engine);
-  // background("white");
   for (let i = 0; i < notes.length; i++) {
     notes[i].display();
 
@@ -136,9 +135,9 @@ function draw() {
       fill(180, 30, 0, 10);
       text(notes[i].title.toUpperCase(), 0, 20);
       textFont(serif);
-      textSize(42);
+      textSize(40);
       fill(0, 10);
-      text(notes[i].text, 0, 45, w, h - 200);
+      text(notes[i].text, 0, 45, w, h - 45);
     }
   }
 
