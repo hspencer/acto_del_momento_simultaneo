@@ -14,6 +14,8 @@ canvas {
 }
 
 #p5_loading {
+  position: absolute;
+  top: 45vh;
   display: block;
   text-transform: uppercase;
   width: 100%;

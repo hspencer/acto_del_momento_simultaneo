@@ -81,7 +81,7 @@ function setup() {
   //Engine.run(engine);
 
   // limits
-  boundaries.push(new Boundary(w / 2, height + 25, width, 50, 0));
+  boundaries.push(new Boundary(w / 2, height + 23, width, 50, 0));
   boundaries.push(new Boundary(-10, h / 2, 20, height * 5, 0));
   boundaries.push(new Boundary(w + 10, h / 2, 20, height * 5, 0));
   
