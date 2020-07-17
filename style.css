@@ -1,4 +1,6 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;700&display=swap');
+*/
 
 html, body {
   margin: 0;
@@ -18,4 +20,8 @@ canvas {
   text-align: center;
   letter-spacing: 1ex;
   font-weight: 100;
+}
+
+#p5{
+  height: 100vh;
 }

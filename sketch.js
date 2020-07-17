@@ -5,13 +5,12 @@
  */
 
 
-let sketch; // el objeto canvas
-let data;   // los datos tomados del JSON
-let notes;
-let w, h;
+let sketch; // html canvas object
+let data;   // JSON data object
+let notes;  // array of visual objects
+let w, h;   // global width and height
 
 // matter aliases : thanks Dan Shiffman and CodingTrain, Nature of Code, etc...
-
 var Engine = Matter.Engine,
   World = Matter.World,
   Bodies = Matter.Bodies,
@@ -19,17 +18,21 @@ var Engine = Matter.Engine,
   Mouse = Matter.Mouse,
   MouseConstraint = Matter.MouseConstraint;
 
-
+// matter.js main components
 var engine;
 var world;
 var boundaries = [];
 
-
+let serif, sans, sansBold;
 function preload() {
   w = document.getElementById("p5").offsetWidth;
-  h = w / 2;
+  h = document.getElementById("p5").offsetHeight;
   let url = "https://wiki.ead.pucv.cl/api.php?action=ask&format=json&maxlag=2000&uselang=user&errorformat=bc&query=[[Categor%C3%ADa:Acto%20del%20momento%20simult%C3%A1neo]]|%3FNota|%3FAutor|%3FPosici%C3%B3n|%3FImagen";
   data = loadJSON(url, gotData, 'jsonp');
+
+  serif = loadFont("fonts/Alegreya-Regular.ttf");
+  sans = loadFont("fonts/AlegreyaSans-Light.ttf");
+  sansBold = loadFont("fonts/AlegreyaSans-Bold.ttf");
 }
 
 let minlat, maxlat, minlon, maxlon;
@@ -65,60 +68,25 @@ function createObjects() {
     let t = thisResult.printouts['Nota'][0];
     let thisNote = new Note(lat, lon, title, t, autor);
     notes.push(thisNote);
-    /*
-    print("lat = "+lat+"\n"
-          +"lon = "+lon+"\n"
-          +"title = "+title+"\n"
-          +"t = "+t+"\n"
-          +"autor = "+autor+"\n"
-         );
-         */
   }
 }
 
-let count = 0;
-let counting = true;
-
-function createOneByOne() {
-  if(count == 0){
-    print("counting one by one")
-  }
-  print(" "+count);
-
-  let I = 0;
-  for (let key in data.query.results) {
-    I++;
-  }
-
-  if (count < I) {
-    let thisNote = data.query.results[count];
-    console.log(thisNote);
-    let lat = thisNote.printouts['Posición'][0].lat;
-    let lon = thisNote.printouts['Posición'][0].lon;
-    let autor = thisNote.printouts['Autor'][0].fulltext;
-    let title = thisNote.fulltext;
-    let t = thisNote.printouts['Nota'][0];
-    let note = new Note(lat, lon, title, t, autor);
-    notes.push(note);
-    count++;
-    print("pushed n°"+count);
-  } else { counting = false; }
-}
 
 function setup() {
   sketch = createCanvas(w, h);
   notes = [];
   sketch.parent('p5');
-  textFont("Alegreya Sans");
   engine = Engine.create();
   world = engine.world;
   //Engine.run(engine);
 
-  boundaries.push(new Boundary(w / 2, height, width, 50, 0));
+  // limits
+  boundaries.push(new Boundary(w / 2, height + 25, width, 50, 0));
   boundaries.push(new Boundary(-10, h / 2, 20, height * 5, 0));
   boundaries.push(new Boundary(w + 10, h / 2, 20, height * 5, 0));
   
   // top bumps
+  /*
   let n = 8;
   for(let i = 1; i < n; i++){
     let spacer = w/n;
@@ -126,6 +94,7 @@ function setup() {
     //tl.show();
     boundaries.push(tl);
   }
+  */
   createObjects();
 
   var canvasmouse = Mouse.create(sketch.elt);
@@ -141,7 +110,7 @@ function setup() {
 
 function windowResized() {
   w = document.getElementById("p5").offsetWidth;
-  h = 500; // w / 2;
+  h = document.getElementById("p5").offsetHeight;
   sketch = createCanvas(w, h);
   sketch.parent('p5');
   createObjects();
@@ -155,29 +124,33 @@ function draw() {
   for (let i = 0; i < notes.length; i++) {
     notes[i].display();
 
+    // if a note is being clicked or dragged
     if (mConstraint.body === notes[i].body) {
-      fill(255, 3);
+      fill(255, 7);
       rectMode(CORNER);
       noStroke();
       rect(0, 0, w, h);
       textAlign(LEFT);
+      textFont(sansBold);
       textSize(18);
-      textStyle(BOLD);
-      fill(180, 30, 0)
-      text(notes[i].title, 50, 50);
-      textSize(36);
-      textStyle(NORMAL);
-      fill(30, 15);
-      text(notes[i].text, 50, 100);//, 400, 400);
+      fill(180, 30, 0, 10);
+      text(notes[i].title.toUpperCase(), 0, 20);
+      textFont(serif);
+      textSize(42);
+      fill(0, 10);
+      text(notes[i].text, 0, 45, w, h - 200);
     }
   }
 
   if (mConstraint.body) {
-    var pos = mConstraint.body.position;
-    var offset = mConstraint.constraint.pointB;
-    var m = mConstraint.mouse.position;
+    let pos = mConstraint.body.position;
+    let offset = mConstraint.constraint.pointB;
+    let m = mConstraint.mouse.position;
+    // paint line while dragging object
+    /*
     strokeWeight(3);
-    stroke(0, 75);
+    stroke(180, 30, 0, 90);
     line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
+    */
   }
 }
