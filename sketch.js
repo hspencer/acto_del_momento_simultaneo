@@ -62,6 +62,34 @@ function gotData(response) {
 
 
 function createObjects() {
+  /// mouse
+  let canvasmouse = Mouse.create(sketch.elt);
+  canvasmouse.pixelRatio = pixelDensity();
+  let options = {
+    mouse: canvasmouse
+  };
+  mConstraint = MouseConstraint.create(engine, options);
+  World.add(world, mConstraint);
+
+  /// limits
+  // bottom
+  boundaries.push(new Boundary(w / 2, height + 49, width, 100, 0));
+
+  // sides
+  boundaries.push(new Boundary(-49, h / 2, 100, height * 15, 0));
+  boundaries.push(new Boundary(w + 49, h / 2, 100, height * 15, 0));
+
+  // top bumps
+  /*
+  let n = 8;
+  for(let i = 1; i < n; i++){
+    let spacer = w/n;
+    let tl = new Boundary(spacer * i, -10, 20, 10, random(-1, 1));
+    //tl.show();
+    boundaries.push(tl);
+  }
+  */
+
   for (let key in data.query.results) {
     let thisResult = data.query.results[key];
     let lat = thisResult.printouts['Posición'][0].lat;
@@ -80,38 +108,14 @@ function setup() {
   sketch.parent('p5');
   engine = Engine.create();
   world = engine.world;
-  //Engine.run(engine);
 
-  /////////////////////////////////////////////// limits
-  // bottom
-  boundaries.push(new Boundary(w / 2, height + 49, width, 100, 0));
-
-  // sides
-  boundaries.push(new Boundary(-49, h / 2, 100, height * 15, 0));
-  boundaries.push(new Boundary(w + 49, h / 2, 100, height * 15, 0));
-
-  // top bumps
-  /*
-  let n = 8;
-  for(let i = 1; i < n; i++){
-    let spacer = w/n;
-    let tl = new Boundary(spacer * i, -10, 20, 10, random(-1, 1));
-    //tl.show();
-    boundaries.push(tl);
-  }
-  */
   createObjects();
-
-  let canvasmouse = Mouse.create(sketch.elt);
-  canvasmouse.pixelRatio = pixelDensity();
-  let options = {
-    mouse: canvasmouse
-  };
-  mConstraint = MouseConstraint.create(engine, options);
-  World.add(world, mConstraint);
 }
 
 function windowResized() {
+  notes = [];
+  engine = Engine.create();
+  world = engine.world;
   w = document.getElementById("p5").offsetWidth;
   h = document.getElementById("p5").offsetHeight;
   sketch = createCanvas(w, h);
