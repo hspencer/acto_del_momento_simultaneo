@@ -6,13 +6,14 @@ class Note {
         this.x = random(margin, w - margin);//map(lon, minlon, maxlon, margin, w - margin);
         this.y = random(-100, -h * 2);//map(lat, minlat, maxlat, 0, -h * 5);
         this.title = title;
-        this.text = text;
+        this.text = text;//.join();
+        // this.text = this.text.join();
         this.author = author;
         this.label = author.toUpperCase();
         this.radius = map(this.text.length, 0, 50, 0, 30);
         this.w = 14 + textWidth(this.label);
         this.h = 6 + textAscent() + textDescent();
-        
+
         let ang = random(-2, 2);
         let force = {
             x: random(-500, 500),

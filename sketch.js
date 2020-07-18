@@ -82,11 +82,14 @@ function setup() {
   world = engine.world;
   //Engine.run(engine);
 
-  // limits
-  boundaries.push(new Boundary(w / 2, height + 23, width, 50, 0));
-  boundaries.push(new Boundary(-10, h / 2, 20, height * 5, 0));
-  boundaries.push(new Boundary(w + 10, h / 2, 20, height * 5, 0));
-  
+  /////////////////////////////////////////////// limits
+  // bottom
+  boundaries.push(new Boundary(w / 2, height + 49, width, 100, 0));
+
+  // sides
+  boundaries.push(new Boundary(-49, h / 2, 100, height * 15, 0));
+  boundaries.push(new Boundary(w + 49, h / 2, 100, height * 15, 0));
+
   // top bumps
   /*
   let n = 8;
@@ -101,13 +104,11 @@ function setup() {
 
   let canvasmouse = Mouse.create(sketch.elt);
   canvasmouse.pixelRatio = pixelDensity();
-  //console.log(canvasmouse);
   let options = {
     mouse: canvasmouse
   };
   mConstraint = MouseConstraint.create(engine, options);
   World.add(world, mConstraint);
-  //console.log(mConstraint);
 }
 
 function windowResized() {
@@ -119,20 +120,21 @@ function windowResized() {
 }
 
 function draw() {
+
   Engine.update(engine);
   for (let i = 0; i < notes.length; i++) {
     notes[i].display();
 
     // if a note is being clicked or dragged
     if (mConstraint.body === notes[i].body) {
-      fill(255, 7);
+      fill(255, 10);
       rectMode(CORNER);
       noStroke();
       rect(0, 0, w, h);
       textAlign(LEFT);
       textFont(sansBold);
       textSize(18);
-      fill(180, 30, 0, 10);
+      fill(180, 30, 0, 15);
       text(notes[i].title.toUpperCase(), 0, 20);
       textFont(serif);
       textSize(40);
@@ -152,4 +154,9 @@ function draw() {
     line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
     */
   }
+
+  if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {
+    mConstraint.constraint.bodyB = null;
+  }
 }
+
