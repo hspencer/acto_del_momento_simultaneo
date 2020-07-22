@@ -110,8 +110,15 @@ function setup() {
 	sketch.parent('p5');
 	createMatterStuff();
 	createObjects();
+
+	// btnU = createButton("U");
+	// btnU.parent('btns');
+	// btnU.mousePressed(unlinkAll);
+
 	btnS = createButton("F");
+	btnS.parent('btns');
 	btnS.mousePressed(saveFile);
+
 	background(255);
 }
 
@@ -148,6 +155,7 @@ function drawNameAndTitle(note) {
 
 function windowResized() {
 	notes = [];
+	springs = [];
 	createMatterStuff();
 	w = document.getElementById("p5").offsetWidth;
 	h = document.getElementById("p5").offsetHeight;

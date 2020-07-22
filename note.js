@@ -49,7 +49,7 @@ class Note {
             blendMode(BLEND);
             fill(255, 4);
             strokeWeight(.25);
-            stroke(0, alfa);
+            stroke(0, 3 + alfa);
             if (this.touched) {
                 noFill();
                 noStroke();
@@ -78,6 +78,7 @@ class Note {
                     // if its closer that the growing circle
                     if (d <= this.springDist) {
                         let options = {
+                            label: "spring",
                             length: d,
                             bodyA: this.body,
                             bodyB: other.body,
