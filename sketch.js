@@ -134,41 +134,35 @@ function draw() {
 	for (let i = 0; i < notes.length; i++) {
 		notes[i].display();
 
+		if (notes[i].over) {
+			drawNameAndTitle(notes[i]);
+		}
+
 		// if a note is being clicked or dragged
 		if (mConstraint.body === notes[i].body) {
-			blendMode(BLEND);
-			fill(255, 10);
-			rectMode(CORNER);
+
+			fill(255, 15);
 			noStroke();
 			rect(0, 0, w, h);
-			textAlign(LEFT);
-			textFont(sansBold);
-			textSize(18);
-			fill(180, 30, 0, 15);
-			text(notes[i].title.toUpperCase(), 0, 20);
-			let tw = textWidth(notes[i].title.toUpperCase());
-			textFont(serif);
-			fill(0, 10);
-			text(" - " + notes[i].author, tw, 20);
 			textSize(40);
 			text(notes[i].text, 0, 45, w, h - 45);
 		}
 	}
 
-	for(spring of springs){
-		if(mouseIsPressed){
-			stroke(180, 30, 0, 55);
-		}else{
+	for (spring of springs) {
+		if (mouseIsPressed) {
+			stroke(180, 30, 0, 45);
+		} else {
 			stroke(180, 30, 0, 4);
 		}
-		
+
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 	}
 
-	for(note of notes){
-		if(note.touched){
+	for (note of notes) {
+		if (note.touched) {
 			fill(0, 50);
-			ellipse(note.x ,note.y, 2, 2);
+			ellipse(note.x, note.y, 2, 2);
 		}
 	}
 
@@ -190,13 +184,13 @@ function draw() {
 }
 
 function mouseClicked() {
-    for (note of notes) {
-        if (note.over) {
-            if (!note.touched) {
-                note.touched = true;
-                note.createSprings();
-            }
-        }
+	for (note of notes) {
+		if (note.over) {
+			if (!note.touched) {
+				note.touched = true;
+				note.createSprings();
+			}
+		}
 	}
 	lastTime = millis();
 }
@@ -206,4 +200,20 @@ function saveFile() {
 	let file = createImage(width, height);
 	file = get();
 	file.save(filename, 'png');
+}
+
+function drawNameAndTitle(note) {
+	blendMode(BLEND);
+	fill(255, 10);
+	noStroke();
+	rect(0, 0, w, h);
+	textAlign(LEFT);
+	textFont(sansBold);
+	textSize(18);
+	fill(180, 30, 0, 15);
+	text(note.title.toUpperCase(), 0, 20);
+	let tw = textWidth(note.title.toUpperCase());
+	textFont(serif);
+	fill(0, 10);
+	text(" - " + note.author, tw, 20);
 }
