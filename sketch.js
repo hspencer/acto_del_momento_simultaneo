@@ -8,8 +8,9 @@ let sketch; // html canvas object
 let data;   // JSON data object
 let notes;  // array of visual objects
 let w, h;   // global width and height
-let fading = true;
+let alfa = 255;
 let lastTime = 0;
+
 // matter aliases : thanks Dan Shiffman and CodingTrain, Nature of Code, etc...
 var Engine = Matter.Engine,
 	World = Matter.World,
@@ -61,7 +62,8 @@ function createObjects() {
 	let canvasmouse = Mouse.create(sketch.elt);
 	canvasmouse.pixelRatio = pixelDensity();
 	let options = {
-		mouse: canvasmouse
+		mouse: canvasmouse,
+		stiffness: 1
 	};
 
 	mConstraint = MouseConstraint.create(engine, options);
@@ -108,15 +110,31 @@ function setup() {
 	sketch.parent('p5');
 	createMatterStuff();
 	createObjects();
-
 	btnS = createButton("F");
 	btnS.mousePressed(saveFile);
+	background(255);
 }
 
 function createMatterStuff() {
 	engine = Engine.create();
 	world = engine.world;
 	engine.world.gravity.y = 0;
+}
+
+function drawNameAndTitle(note) {
+	fill(255, 5);
+	noStroke();
+	rect(0, 0, w, 32);
+	textAlign(LEFT);
+	textFont(sansBold);
+	textSize(18);
+	fill(180, 30, 0, 15);
+	noStroke();
+	text(note.title.toUpperCase(), 0, 20);
+	let tw = textWidth(note.title.toUpperCase());
+	textFont(serif);
+	fill(0, 10);
+	text(" - " + note.author, tw, 20);
 }
 
 function windowResized() {
@@ -131,29 +149,31 @@ function windowResized() {
 
 function draw() {
 	Engine.update(engine);
-	for (let i = 0; i < notes.length; i++) {
-		notes[i].display();
+	calcAlfa();
+	for (let note of notes) {
+		note.display();
 
-		if (notes[i].over) {
-			drawNameAndTitle(notes[i]);
+		if (note.over) {
+			drawNameAndTitle(note);
 		}
 
 		// if a note is being clicked or dragged
-		if (mConstraint.body === notes[i].body) {
+		if (mConstraint.body === note.body) {
 			fill(255, 15);
 			noStroke();
 			rect(0, 0, w, h);
 			textSize(40);
 			fill(0, 35);
-			text(notes[i].text, 0, 45, w, h - 45);
+			text(note.text, 0, 45, w, h - 45);
 		}
 	}
 
+	// draw springs
 	for (spring of springs) {
 		if (mouseIsPressed) {
-			stroke(180, 30, 0, 45);
+			stroke(180, 30, 0, 15);
 		} else {
-			stroke(150, 40, 0, 3);
+			stroke(150, 40, 0, alfa);
 		}
 
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
@@ -170,12 +190,12 @@ function draw() {
 		let pos = mConstraint.body.position;
 		let offset = mConstraint.constraint.pointB;
 		let m = mConstraint.mouse.position;
+		
 		// paint line while dragging object
-		/*
-		strokeWeight(3);
-		stroke(180, 30, 0, 90);
+	
+		strokeWeight(1);
+		stroke(180, 30, 0, 30);
 		line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
-		*/
 	}
 
 	if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {
@@ -188,7 +208,19 @@ function mouseClicked() {
 		if (note.over) {
 			if (!note.touched) {
 				note.touched = true;
-				note.createSprings();
+				note.creatingSprings = true;
+			}
+		}
+	}
+	lastTime = millis();
+}
+
+function touchEnded() {
+	for (note of notes) {
+		if (note.over) {
+			if (!note.touched) {
+				note.touched = true;
+				note.creatingSprings = true;
 			}
 		}
 	}
@@ -202,18 +234,11 @@ function saveFile() {
 	file.save(filename, 'png');
 }
 
-function drawNameAndTitle(note) {
-	blendMode(BLEND);
-	fill(255, 10);
-	noStroke();
-	rect(0, 0, w, h);
-	textAlign(LEFT);
-	textFont(sansBold);
-	textSize(18);
-	fill(180, 30, 0, 15);
-	text(note.title.toUpperCase(), 0, 20);
-	let tw = textWidth(note.title.toUpperCase());
-	textFont(serif);
-	fill(0, 10);
-	text(" - " + note.author, tw, 20);
+function calcAlfa(){
+	let alfaMax = 100;
+	let alfaMin = 1;
+	let maxTime = 2000;
+	let passedTime = millis() - lastTime;
+	alfa = map(passedTime, 0, maxTime, alfaMax, alfaMin);
+	alfa = constrain(alfa, alfaMin, alfaMax);
 }

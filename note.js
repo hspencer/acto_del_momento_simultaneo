@@ -1,7 +1,8 @@
 class Note {
     constructor(lat, lon, title, text, author) {
-        textFont(sans);
-        textSize(16);
+        this.connectedTo = "nothing";
+        this.springDist = 0;
+        this.creatingSprings = false;
         let margin = w / 5;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
@@ -13,6 +14,7 @@ class Note {
         this.r = 12;
         this.over = false;
         this.touched = false;
+        this.angle;
         let options = {
             friction: 0,
             restitution: 0.77,
@@ -30,27 +32,30 @@ class Note {
     }
     display() {
         this.rollover(mouseX, mouseY);
+        this.angle = this.body.angle;
         let pos = this.body.position;
-        let angle = this.body.angle;
         this.x = pos.x;
         this.y = pos.y;
         push();
         translate(pos.x, pos.y);
-        rotate(angle);
+        rotate(this.angle);
         if (this.over) {
             blendMode(MULTIPLY);
             strokeWeight(.5);
-            stroke(0, 15);
+            stroke(0, 20);
             fill(255, 15);
+            ellipse(0, 0, this.r * 2);
         } else {
             blendMode(BLEND);
             fill(255, 4);
-            strokeWeight(.1);
+            strokeWeight(.25);
             stroke(0, 15);
+            if (this.touched) {
+                noFill();
+                noStroke();
+            }
+            ellipse(0, 0, this.r * 2);
         }
-
-        
-        ellipse(0, 0, this.r * 2);
 
         if (this.touched) {
             noStroke();
@@ -60,53 +65,39 @@ class Note {
         pop();
 
         if (this.creatingSprings) {
-            while (this.connectedNotes.length < 2) {
-                for (let other of notes) {
-                    print("other x: " + other.x);
-                    if (this.body != other.body) {
-                        let d = dist(this.x, this.y, other.x, other.y);
-
-
-                        if (d < this.springDist) {
-                            this.connectedNotes.push(other);
-
+            // paint growing circle
+            noStroke();
+            fill(180, 50, 0, 3);
+            ellipse(this.x, this.y, this.springDist * 2);
+            // check all other notes
+            for (let other of notes) {
+                // if its different and not already connected
+                if (this.body != other.body && this.title != other.connectedTo) {
+                    // calculate the distance between notes
+                    let d = dist(this.x, this.y, other.x, other.y);
+                    // if its closer that the growing circle
+                    if (d <= this.springDist) {
+                        let options = {
+                            length: d,
+                            bodyA: this.body,
+                            bodyB: other.body,
+                            stiffness: 1
                         }
-
-                        this.springDist += 32;
+                        
+                        this.connectedTo = other.title;
+                        // create new spring
+                        let spring = Constraint.create(options);
+                        World.add(world, spring);
+                        springs.push(spring);
+                        // paint new spring circle distance
+                        stroke(180, 50, 0, 100);
+                        noFill();
+                        ellipse(this.x, this.y, this.springDist * 2);
+                        this.creatingSprings = false;
                     }
-
-                    noFill();
-                    stroke(180, 30, 0, 25);
-                    ellipse(this.x, this.y, this.springDist);
+                    this.springDist ++;
                 }
-
             }
-            this.makeS();
-            this.creatingSprings = false;
-        }
-    }
-
-    createSprings() {
-        this.connectedNotes = [];
-        this.springDist = 0;
-        this.creatingSprings = true;
-
-    }
-
-    makeS() {
-        for (let i = 0; i < this.connectedNotes.length; i++) {
-            let otherNote = this.connectedNotes[i];
-            let otherBody = otherNote.body;
-            let d = dist(this.x, this.y, otherNote.x, otherNote.y);
-            let options = {
-                bodyA: this.body,
-                bodyB: otherBody,
-                length: d,
-                stiffness: 0.1
-            }
-            let spring = Constraint.create(options);
-            World.add(world, spring);
-            springs.push(spring);
         }
     }
 }
