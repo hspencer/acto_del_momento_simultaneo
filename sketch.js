@@ -128,12 +128,21 @@ function drawNameAndTitle(note) {
 	textAlign(LEFT);
 	textFont(sansBold);
 	textSize(18);
-	fill(180, 30, 0, 15);
-	noStroke();
+	if (mouseIsPressed) {
+		fill(180, 30, 0, 30);
+	}
+	else {
+		fill(180, 30, 0, 15);
+	}
 	text(note.title.toUpperCase(), 0, 20);
 	let tw = textWidth(note.title.toUpperCase());
 	textFont(serif);
-	fill(0, 10);
+	if (mouseIsPressed) {
+		fill(0, 25);
+	} else {
+		fill(0, 10);
+	}
+
 	text(" - " + note.author, tw, 20);
 }
 
@@ -190,9 +199,9 @@ function draw() {
 		let pos = mConstraint.body.position;
 		let offset = mConstraint.constraint.pointB;
 		let m = mConstraint.mouse.position;
-		
+
 		// paint line while dragging object
-	
+
 		strokeWeight(1);
 		stroke(180, 30, 0, 30);
 		line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
@@ -234,8 +243,8 @@ function saveFile() {
 	file.save(filename, 'png');
 }
 
-function calcAlfa(){
-	let alfaMax = 100;
+function calcAlfa() {
+	let alfaMax = 75;
 	let alfaMin = 1;
 	let maxTime = 2000;
 	let passedTime = millis() - lastTime;

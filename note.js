@@ -49,7 +49,7 @@ class Note {
             blendMode(BLEND);
             fill(255, 4);
             strokeWeight(.25);
-            stroke(0, 15);
+            stroke(0, alfa);
             if (this.touched) {
                 noFill();
                 noStroke();
