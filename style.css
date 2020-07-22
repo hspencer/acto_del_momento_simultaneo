@@ -26,3 +26,9 @@ canvas {
 #p5{
   height: 100vh;
 }
+
+button{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

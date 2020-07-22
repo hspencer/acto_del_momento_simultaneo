@@ -2,49 +2,109 @@ class Note {
     constructor(lat, lon, title, text, author) {
         textFont(sans);
         textSize(16);
-        let margin = 50;
-        this.x = random(margin, w - margin);//map(lon, minlon, maxlon, margin, w - margin);
-        this.y = random(-100, -h * 2);//map(lat, minlat, maxlat, 0, -h * 5);
+        let margin = w / 5;
+        this.x = map(lon, minlon, maxlon, margin, w - margin);
+        this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.title = title;
-        this.text = text;//.join();
-        // this.text = this.text.join();
+        this.text = text;
         this.author = author;
         this.label = author.toUpperCase();
         this.radius = map(this.text.length, 0, 50, 0, 30);
-        this.w = 14 + textWidth(this.label);
-        this.h = 6 + textAscent() + textDescent();
-
-        let ang = random(-2, 2);
-        let force = {
-            x: random(-500, 500),
-            y: 0
-        };
+        this.r = 12;
+        this.over = false;
+        this.touched = false;
         let options = {
-            friction: 0.3,
+            friction: 0,
             restitution: 0.77,
-            angle: ang,
-            velocity: force
+            mass: 30
         };
-        this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);
+        this.body = Bodies.circle(this.x, this.y, this.r, options);
         World.add(world, this.body);
     }
-
+    rollover(x, y) {
+        if (dist(this.x, this.y, x, y) < this.radius) {
+            this.over = true;
+        } else {
+            this.over = false;
+        }
+    }
     display() {
-        rectMode(CENTER);
-        textAlign(CENTER);
+        this.rollover(mouseX, mouseY);
         let pos = this.body.position;
         let angle = this.body.angle;
+        this.x = pos.x;
+        this.y = pos.y;
         push();
         translate(pos.x, pos.y);
         rotate(angle);
-        strokeWeight(1);
-        stroke(190, 30);
-        fill(255, 50);
-        rect(0, 0, this.w, this.h, 3, 3, 3, 3);
-        fill(0, 100);
-        textFont(sans);
-        textSize(16);
-        text(this.label, 0, 5);
+        if (this.over) {
+            strokeWeight(.25);
+            stroke(0, 15);
+            fill(255, 15);
+        } else {
+            noFill();
+            strokeWeight(.5);
+            stroke(180, 55, 15, 14);
+        }
+
+        
+        ellipse(0, 0, this.r * 2);
+
+        if (this.touched) {
+            noStroke();
+            fill(0, 40);
+            ellipse(0, 0, 2);
+        }
         pop();
+
+        if (this.creatingSprings) {
+            while (this.connectedNotes.length < 2) {
+                for (let other of notes) {
+                    print("other x: " + other.x);
+                    if (this.body != other.body) {
+                        let d = dist(this.x, this.y, other.x, other.y);
+
+
+                        if (d < this.springDist) {
+                            this.connectedNotes.push(other);
+
+                        }
+
+                        this.springDist += 32;
+                    }
+
+                    noFill();
+                    stroke(180, 30, 0, 25);
+                    ellipse(this.x, this.y, this.springDist);
+                }
+
+            }
+            this.makeS();
+            this.creatingSprings = false;
+        }
+    }
+
+    createSprings() {
+        this.connectedNotes = [];
+        this.springDist = 0;
+        this.creatingSprings = true;
+
+    }
+
+    makeS() {
+        for (let i = 0; i < this.connectedNotes.length; i++) {
+            let otherNote = this.connectedNotes[i];
+            let otherBody = otherNote.body;
+            let d = dist(this.x, this.y, otherNote.x, otherNote.y);
+            let options = {
+                bodyA: this.body,
+                bodyB: otherBody,
+                length: d,
+                stiffness: 0.1
+            }
+            let spring = Constraint.create(options);
+            World.add(world, spring);
+            springs.push(spring);
+        }
     }
 }
