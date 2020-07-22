@@ -41,14 +41,14 @@ class Note {
         rotate(this.angle);
         if (this.over) {
             blendMode(MULTIPLY);
-            strokeWeight(.5);
+            strokeWeight(1);
             stroke(0, 20);
             fill(255, 15);
             ellipse(0, 0, this.r * 2);
         } else {
             blendMode(BLEND);
             fill(255, 4);
-            strokeWeight(.25);
+            strokeWeight(.5);
             stroke(0, 3 + alfa);
             if (this.touched) {
                 noFill();

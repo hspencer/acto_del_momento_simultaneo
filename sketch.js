@@ -131,7 +131,7 @@ function createMatterStuff() {
 function drawNameAndTitle(note) {
 	fill(255, 5);
 	noStroke();
-	rect(0, 0, w, 32);
+	rect(0, 0, w, 42);
 	textAlign(LEFT);
 	textFont(sansBold);
 	textSize(18);
@@ -143,14 +143,21 @@ function drawNameAndTitle(note) {
 	}
 	text(note.title.toUpperCase(), 0, 20);
 	let tw = textWidth(note.title.toUpperCase());
+
 	textFont(serif);
 	if (mouseIsPressed) {
 		fill(0, 25);
 	} else {
 		fill(0, 10);
 	}
+	let aw = textWidth(" - " + note.author);
 
-	text(" - " + note.author, tw, 20);
+	if(tw + aw < w - 20){
+		text(" - " + note.author, tw, 20);
+	}else{
+		text(note.author, 0, 20 + textAscent());
+	}
+	
 }
 
 function windowResized() {
@@ -188,7 +195,7 @@ function draw() {
 	// draw springs
 	for (spring of springs) {
 		if (mouseIsPressed) {
-			stroke(180, 30, 0, 15);
+			stroke(180, 30, 0, 25);
 		} else {
 			stroke(150, 40, 0, alfa);
 		}
@@ -252,7 +259,7 @@ function saveFile() {
 }
 
 function calcAlfa() {
-	let alfaMax = 75;
+	let alfaMax = 25;
 	let alfaMin = 1;
 	let maxTime = 2000;
 	let passedTime = millis() - lastTime;
