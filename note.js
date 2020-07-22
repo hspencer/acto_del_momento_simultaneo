@@ -38,13 +38,15 @@ class Note {
         translate(pos.x, pos.y);
         rotate(angle);
         if (this.over) {
-            strokeWeight(.25);
+            blendMode(MULTIPLY);
+            strokeWeight(.5);
             stroke(0, 15);
             fill(255, 15);
         } else {
-            noFill();
-            strokeWeight(.5);
-            stroke(180, 55, 15, 14);
+            blendMode(BLEND);
+            fill(255, 4);
+            strokeWeight(.1);
+            stroke(0, 15);
         }
 
         

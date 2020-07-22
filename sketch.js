@@ -156,8 +156,20 @@ function draw() {
 	}
 
 	for(spring of springs){
-		stroke(180, 30, 0, 8);
+		if(mouseIsPressed){
+			stroke(180, 30, 0, 55);
+		}else{
+			stroke(180, 30, 0, 4);
+		}
+		
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
+	}
+
+	for(note of notes){
+		if(note.touched){
+			fill(0, 50);
+			ellipse(note.x ,note.y, 2, 2);
+		}
 	}
 
 	if (mConstraint.body) {
