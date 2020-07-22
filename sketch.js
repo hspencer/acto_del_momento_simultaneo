@@ -140,11 +140,11 @@ function draw() {
 
 		// if a note is being clicked or dragged
 		if (mConstraint.body === notes[i].body) {
-
 			fill(255, 15);
 			noStroke();
 			rect(0, 0, w, h);
 			textSize(40);
+			fill(0, 35);
 			text(notes[i].text, 0, 45, w, h - 45);
 		}
 	}
@@ -153,7 +153,7 @@ function draw() {
 		if (mouseIsPressed) {
 			stroke(180, 30, 0, 45);
 		} else {
-			stroke(180, 30, 0, 4);
+			stroke(150, 40, 0, 3);
 		}
 
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
