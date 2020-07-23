@@ -118,8 +118,6 @@ function setup() {
 	btnS = createButton("F");
 	btnS.parent('btns');
 	btnS.mousePressed(saveFile);
-
-	background(255);
 }
 
 function createMatterStuff() {
@@ -129,27 +127,13 @@ function createMatterStuff() {
 }
 
 function drawNameAndTitle(note) {
-	fill(255, 5);
+	fill(180, 30, 0);
+	textSize(16);
 	noStroke();
-	rect(0, 0, w, 42);
-	textAlign(LEFT);
-	textFont(sansBold);
-	textSize(18);
-	if (mouseIsPressed) {
-		fill(180, 30, 0, 30);
-	}
-	else {
-		fill(180, 30, 0, 15);
-	}
 	text(note.title.toUpperCase(), 0, 20);
 	let tw = textWidth(note.title.toUpperCase());
-
 	textFont(serif);
-	if (mouseIsPressed) {
-		fill(0, 25);
-	} else {
-		fill(0, 10);
-	}
+	fill(0, 190);
 	let aw = textWidth(" - " + note.author);
 
 	if (tw + aw < w) {
@@ -172,8 +156,9 @@ function windowResized() {
 }
 
 function draw() {
+	background(255);
 	Engine.update(engine);
-	calcAlfa();
+
 	for (let note of notes) {
 		note.display();
 
@@ -181,26 +166,22 @@ function draw() {
 			drawNameAndTitle(note);
 		}
 
-		// if a note is being clicked or dragged
+		// if a note is being clicked or dragged display the content
 		if (mConstraint.body === note.body) {
 			fill(255, 15);
 			noStroke();
 			rect(0, 0, w, h);
 			textSize(40);
-			fill(0, 25);
-			text(note.text, 0, 45, w, h - 45);
+			fill(0, 200);
+			text(note.text, 0, 30, w, h - 30);
 		}
 	}
 
 	// draw springs
 	for (spring of springs) {
-		if (mouseIsPressed) {
-			stroke(180, 30, 0, 25);
-		} else {
-			stroke(150, 40, 0, alfa);
-		}
+			stroke(180, 30, 0, 160);
+			line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 
-		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 	}
 
 	if (mConstraint.body) {
@@ -249,13 +230,4 @@ function saveFile() {
 	let file = createImage(width, height);
 	file = get();
 	file.save(filename, 'png');
-}
-
-function calcAlfa() {
-	let alfaMax = 25;
-	let alfaMin = 1;
-	let maxTime = 2000;
-	let passedTime = millis() - lastTime;
-	alfa = map(passedTime, 0, maxTime, alfaMax, alfaMin);
-	alfa = constrain(alfa, alfaMin, alfaMax);
 }

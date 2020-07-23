@@ -39,36 +39,40 @@ class Note {
         push();
         translate(pos.x, pos.y);
         rotate(this.angle);
-        if (this.over) {
-            blendMode(MULTIPLY);
-            strokeWeight(1.5);
-            stroke(0, 5);
-            fill(255, 5);
-            ellipse(0, 0, this.r * 2);
-        } else {
-            blendMode(BLEND);
-            fill(255, 4);
-            strokeWeight(.5);
-            stroke(20, 1 + alfa/2);
-            if (this.touched) {
-                noFill();
-                noStroke();
-            }
-            ellipse(0, 0, this.r * 2);
-        }
 
-        if (this.touched) {
+
+        if (this.over && this.touched) { 
+            fill(180, 30, 0, 20);
             noStroke();
-            fill(0, 40);
-            ellipse(0, 0, 2);
+            ellipse(0, 0, this.r * 2);
+            stroke(0);
+            strokeWeight(3);
+            point(0, 0);
         }
+        if (this.over && !this.touched) {
+            fill(180, 30, 0, 20);
+            stroke(180, 30, 0, 250);
+            strokeWeight(1);
+            ellipse(0, 0, this.r * 2);
+         }
+        if (!this.over && this.touched) {
+            stroke(0);
+            strokeWeight(3);
+            point(0, 0);
+         }
+        if (!this.over && !this.touched) {
+            stroke(0, 30);
+            strokeWeight(1.5);
+            fill(190, 25);
+            ellipse(0, 0, this.r * 2);
+         }
 
         pop();
 
         if (this.creatingSprings) {
             // paint growing circle
-            noStroke();
-            fill(180, 50, 0, 3);
+            noFill();
+            stroke(180, 50, 0, 90);
             ellipse(this.x, this.y, this.springDist * 2);
             // check all other notes
             for (let other of notes) {
@@ -85,19 +89,15 @@ class Note {
                             bodyB: other.body,
                             stiffness: 1
                         }
-                        
+
                         this.connectedTo = other.title;
                         // create new spring
                         let spring = Constraint.create(options);
                         World.add(world, spring);
                         springs.push(spring);
-                        // paint new spring circle distance
-                        stroke(180, 50, 0, 100);
-                        noFill();
-                        ellipse(this.x, this.y, this.springDist * 2);
                         this.creatingSprings = false;
                     }
-                    this.springDist ++;
+                    this.springDist++;
                 }
             }
         }
