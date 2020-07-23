@@ -61,7 +61,7 @@ class Note {
             point(0, 0);
          }
         if (!this.over && !this.touched) {
-            stroke(0, 30);
+            stroke(0, 45);
             strokeWeight(1.5);
             fill(190, 25);
             ellipse(0, 0, this.r * 2);
@@ -72,7 +72,7 @@ class Note {
         if (this.creatingSprings) {
             // paint growing circle
             noFill();
-            stroke(180, 50, 0, 90);
+            stroke(0, 45);
             ellipse(this.x, this.y, this.springDist * 2);
             // check all other notes
             for (let other of notes) {
