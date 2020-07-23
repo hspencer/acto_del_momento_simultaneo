@@ -28,15 +28,17 @@ let boundaries = [];
 let serif, sans, sansBold;
 
 function preload() {
+	// calculate width and height from html div
 	w = document.getElementById("p5").offsetWidth;
 	h = document.getElementById("p5").offsetHeight;
 	let url = "https://wiki.ead.pucv.cl/api.php?action=ask&format=json&maxlag=2000&uselang=user&errorformat=bc&query=[[Categor%C3%ADa:Acto%20del%20momento%20simult%C3%A1neo]]|%3FNota|%3FAutor|%3FPosici%C3%B3n|%3FImagen";
 	data = loadJSON(url, gotData, 'jsonp');
-
+	// fonts
 	serif = loadFont("fonts/Alegreya-Regular.ttf");
 	sans = loadFont("fonts/AlegreyaSans-Light.ttf");
 	sansBold = loadFont("fonts/AlegreyaSans-Bold.ttf");
 }
+// geographical boundaries
 let minlat, maxlat, minlon, maxlon;
 
 function gotData(response) {
@@ -48,13 +50,12 @@ function gotData(response) {
 		let thisResult = data.query.results[key];
 		let lat = thisResult.printouts['Posición'][0].lat;
 		let lon = thisResult.printouts['Posición'][0].lon;
-
+		// calc geo boundaries
 		if (minlat > lat) { minlat = lat; }
 		if (minlon > lon) { minlon = lon; }
 		if (maxlat < lat) { maxlat = lat; }
 		if (maxlon < lon) { maxlon = lon; }
 	}
-
 }
 
 function createObjects() {
@@ -71,14 +72,17 @@ function createObjects() {
 
 	/// limits
 	// top
-	boundaries.push(new Boundary(w / 2, 0 - 49, width, 100, 0));
+
+	let thickness = 500;
+
+	boundaries.push(new Boundary(w / 2, 0 - thickness / 2, width, thickness, 0));
 
 	// bottom
-	boundaries.push(new Boundary(w / 2, height + 49, width, 100, 0));
+	boundaries.push(new Boundary(w / 2, height + thickness / 2, width, thickness, 0));
 
 	// sides
-	boundaries.push(new Boundary(-49, h / 2, 100, height * 15, 0));
-	boundaries.push(new Boundary(w + 49, h / 2, 100, height * 15, 0));
+	boundaries.push(new Boundary(-thickness / 2, h / 2, thickness, height * 15, 0));
+	boundaries.push(new Boundary(w + thickness / 2, h / 2, thickness, height * 15, 0));
 
 	for (let key in data.query.results) {
 		let thisResult = data.query.results[key];
@@ -100,6 +104,12 @@ function createObjects() {
 	}
 }
 
+let g; // other graphics
+function createBlendGraphics() {
+	g = createGraphics(w, h);
+	g.background(255);
+}
+
 let btnS;
 let springs;
 
@@ -110,7 +120,7 @@ function setup() {
 	sketch.parent('p5');
 	createMatterStuff();
 	createObjects();
-
+	createBlendGraphics();
 	// btnU = createButton("U");
 	// btnU.parent('btns');
 	// btnU.mousePressed(unlinkAll);
@@ -126,24 +136,6 @@ function createMatterStuff() {
 	engine.world.gravity.y = 0;
 }
 
-function drawNameAndTitle(note) {
-	fill(180, 30, 0);
-	textSize(16);
-	noStroke();
-	text(note.title.toUpperCase(), 0, 20);
-	let tw = textWidth(note.title.toUpperCase());
-	textFont(serif);
-	fill(0, 190);
-	let aw = textWidth(" - " + note.author);
-
-	if (tw + aw < w) {
-		text(" - " + note.author, tw, 20);
-	} else {
-		text(note.author, 0, 20 + textAscent());
-	}
-
-}
-
 function windowResized() {
 	notes = [];
 	springs = [];
@@ -153,34 +145,29 @@ function windowResized() {
 	sketch = createCanvas(w, h);
 	sketch.parent('p5');
 	createObjects();
+	createBlendGraphics();
 }
 
 function draw() {
-	background(255);
+	background(g.get());
 	Engine.update(engine);
 
 	for (let note of notes) {
 		note.display();
-
 		if (note.over) {
-			drawNameAndTitle(note);
+			displayNoteTitle(note);
 		}
-
 		// if a note is being clicked or dragged display the content
 		if (mConstraint.body === note.body) {
-			fill(255, 15);
-			noStroke();
-			rect(0, 0, w, h);
-			textSize(40);
-			fill(0, 200);
-			text(note.text, 0, 30, w, h - 30);
+			displayNoteContent(note);
 		}
 	}
 
 	// draw springs
 	for (spring of springs) {
-			stroke(180, 30, 0, 160);
-			line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
+		stroke(180, 30, 0, 160);
+		strokeWeight(.25);
+		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 
 	}
 
@@ -191,14 +178,15 @@ function draw() {
 
 		// paint line while dragging object
 
-		strokeWeight(1);
-		stroke(180, 30, 0, 30);
+		strokeWeight(2);
+		stroke(180, 30, 0, 140);
 		line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
 	}
 
 	if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {
 		mConstraint.constraint.bodyB = null;
 	}
+	updateGraphics();
 }
 
 function mouseClicked() {
@@ -206,7 +194,7 @@ function mouseClicked() {
 		if (note.over) {
 			if (!note.touched) {
 				note.touched = true;
-				note.creatingSprings = true;
+				note.creatingSpring = true;
 			}
 		}
 	}
@@ -218,7 +206,7 @@ function touchEnded() {
 		if (note.over) {
 			if (!note.touched) {
 				note.touched = true;
-				note.creatingSprings = true;
+				note.creatingSpring = true;
 			}
 		}
 	}
@@ -230,4 +218,42 @@ function saveFile() {
 	let file = createImage(width, height);
 	file = get();
 	file.save(filename, 'png');
+}
+
+function displayNoteTitle(note) {
+	g.fill(180, 30, 0);
+	g.textFont(serif);
+	g.textSize(16);
+	g.noStroke();
+	g.text(note.title.toUpperCase(), 0, 20);
+	let tw = g.textWidth(note.title.toUpperCase());
+	g.textFont(serif);
+	g.fill(0, 190);
+	let aw = g.textWidth(" - " + note.author);
+	if (tw + aw < w) {
+		g.text(" - " + note.author, tw, 20);
+	} else {
+		g.text(note.author, 0, 20 + textAscent());
+	}
+}
+
+function displayNoteContent(note) {
+	g.textSize(48);
+	g.fill(80, 150);
+	g.text(note.text, 0, 30, w, h - 30);
+}
+
+function updateGraphics() {
+	// draw springs trails
+	for (spring of springs) {
+		g.stroke(180, 30, 0, 45);
+		strokeWeight(1);
+		g.line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
+
+	}
+	g.blendMode(ADD);
+	g.fill(255, 1);
+	g.noStroke();
+	g.rect(0, 0, w, h);
+	g.blendMode(BLEND);
 }

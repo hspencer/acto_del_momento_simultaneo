@@ -2,16 +2,15 @@ class Note {
     constructor(lat, lon, title, text, author) {
         this.connectedTo = "nothing";
         this.springDist = 0;
-        this.creatingSprings = false;
+        this.creatingSpring = false;
         let margin = w / 5;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.title = title;
         this.text = text;
         this.author = author;
-        this.label = author.toUpperCase();
-        this.radius = map(this.text.length, 0, 50, 0, 30);
-        this.r = 12;
+        this.radius = map(this.text.length, 0, 50, 6, 25);
+        this.r = this.radius;
         this.over = false;
         this.touched = false;
         this.angle;
@@ -40,9 +39,8 @@ class Note {
         translate(pos.x, pos.y);
         rotate(this.angle);
 
-
-        if (this.over && this.touched) { 
-            fill(180, 30, 0, 20);
+        if (this.over && this.touched) {
+            fill(180, 30, 0, 45);
             noStroke();
             ellipse(0, 0, this.r * 2);
             stroke(0);
@@ -50,29 +48,30 @@ class Note {
             point(0, 0);
         }
         if (this.over && !this.touched) {
-            fill(180, 30, 0, 20);
+            fill(180, 30, 0, 45);
             stroke(180, 30, 0, 250);
             strokeWeight(1);
             ellipse(0, 0, this.r * 2);
-         }
+        }
         if (!this.over && this.touched) {
             stroke(0);
             strokeWeight(3);
             point(0, 0);
-         }
+        }
         if (!this.over && !this.touched) {
             stroke(0, 45);
             strokeWeight(1.5);
             fill(190, 25);
             ellipse(0, 0, this.r * 2);
-         }
+        }
 
         pop();
 
-        if (this.creatingSprings) {
+        if (this.creatingSpring) {
             // paint growing circle
             noFill();
-            stroke(0, 45);
+            stroke(0, 10);
+            strokeWeight(3);
             ellipse(this.x, this.y, this.springDist * 2);
             // check all other notes
             for (let other of notes) {
@@ -89,13 +88,12 @@ class Note {
                             bodyB: other.body,
                             stiffness: 1
                         }
-
                         this.connectedTo = other.title;
                         // create new spring
                         let spring = Constraint.create(options);
                         World.add(world, spring);
                         springs.push(spring);
-                        this.creatingSprings = false;
+                        this.creatingSpring = false;
                     }
                     this.springDist++;
                 }
