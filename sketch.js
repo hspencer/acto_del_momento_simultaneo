@@ -152,12 +152,12 @@ function drawNameAndTitle(note) {
 	}
 	let aw = textWidth(" - " + note.author);
 
-	if(tw + aw < w - 20){
+	if (tw + aw < w) {
 		text(" - " + note.author, tw, 20);
-	}else{
+	} else {
 		text(note.author, 0, 20 + textAscent());
 	}
-	
+
 }
 
 function windowResized() {
@@ -187,7 +187,7 @@ function draw() {
 			noStroke();
 			rect(0, 0, w, h);
 			textSize(40);
-			fill(0, 35);
+			fill(0, 25);
 			text(note.text, 0, 45, w, h - 45);
 		}
 	}
@@ -201,13 +201,6 @@ function draw() {
 		}
 
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
-	}
-
-	for (note of notes) {
-		if (note.touched) {
-			fill(0, 50);
-			ellipse(note.x, note.y, 2, 2);
-		}
 	}
 
 	if (mConstraint.body) {

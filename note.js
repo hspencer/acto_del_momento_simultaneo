@@ -41,15 +41,15 @@ class Note {
         rotate(this.angle);
         if (this.over) {
             blendMode(MULTIPLY);
-            strokeWeight(1);
-            stroke(0, 20);
-            fill(255, 15);
+            strokeWeight(1.5);
+            stroke(0, 5);
+            fill(255, 5);
             ellipse(0, 0, this.r * 2);
         } else {
             blendMode(BLEND);
             fill(255, 4);
             strokeWeight(.5);
-            stroke(0, 3 + alfa);
+            stroke(20, 1 + alfa/2);
             if (this.touched) {
                 noFill();
                 noStroke();
@@ -62,6 +62,7 @@ class Note {
             fill(0, 40);
             ellipse(0, 0, 2);
         }
+
         pop();
 
         if (this.creatingSprings) {
