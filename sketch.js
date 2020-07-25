@@ -1,6 +1,6 @@
 /**
  *  Acto del Momento Simultáneo
- *  e[ad] Escuela de Arquitectura y Diseño
+ *  Herbert Spencer
  *  2020
  */
 
@@ -8,7 +8,6 @@ let sketch; // html canvas object
 let data;   // JSON data object
 let notes;  // array of visual objects
 let w, h;   // global width and height
-let alfa = 255;
 let lastTime = 0;
 
 // matter aliases : thanks Dan Shiffman and CodingTrain, Nature of Code, etc...
@@ -32,7 +31,7 @@ function preload() {
 	w = document.getElementById("p5").offsetWidth;
 	h = document.getElementById("p5").offsetHeight;
 	let url = "https://wiki.ead.pucv.cl/api.php?action=ask&format=json&maxlag=2000&uselang=user&errorformat=bc&query=[[Categor%C3%ADa:Acto%20del%20momento%20simult%C3%A1neo]]|%3FNota|%3FAutor|%3FPosici%C3%B3n|%3FImagen";
-	data = loadJSON("data.json", gotData, 'jsonp');//url, gotData, 'jsonp');
+	data = loadJSON("data.json", gotData, 'json');//url, gotData, 'jsonp');
 	// fonts
 	serif = loadFont("fonts/Alegreya-Regular.ttf");
 	sans = loadFont("fonts/AlegreyaSans-Light.ttf");
@@ -56,11 +55,34 @@ function gotData(response) {
 		if (maxlat < lat) { maxlat = lat; }
 		if (maxlon < lon) { maxlon = lon; }
 	}
-	print("lat range: "+minlat+", "+maxlat);
-	print("lon range. "+minlon+", "+maxlon);
+	print("lat range: " + minlat + ", " + maxlat);
+	print("lon range. " + minlon + ", " + maxlon);
 }
 
 function createObjects() {
+	createConstraints();
+	for (let key in data.query.results) {
+		let thisResult = data.query.results[key];
+		let lat = thisResult.printouts['Posición'][0].lat;
+		let lon = thisResult.printouts['Posición'][0].lon;
+		let author = thisResult.printouts['Autor'][0].fulltext;
+		let title = thisResult.fulltext;
+		let content = thisResult.printouts['Nota'][0];
+		
+		// only create complete notes
+		// if (!isNaN(lat) &&
+		// 	!isNaN(lon) &&
+		// 	typeof title === 'string' &&
+		// 	typeof t === 'string' &&
+		// 	typeof author === 'string') {
+			let thisNote = new Note(lat, lon, title, content, author);
+			notes.push(thisNote);
+			print("note " + title + " created successfully")
+		//}
+	}
+}
+
+function createConstraints() {
 	/// mouse
 	let canvasmouse = Mouse.create(sketch.elt);
 	canvasmouse.pixelRatio = pixelDensity();
@@ -83,27 +105,6 @@ function createObjects() {
 	// sides
 	boundaries.push(new Boundary(-thickness / 2, h / 2, thickness, height * 15, 0));
 	boundaries.push(new Boundary(w + thickness / 2, h / 2, thickness, height * 15, 0));
-
-	for (let key in data.query.results) {
-		console.log(key);
-		let thisResult = data.query.results[key];
-		let lat = thisResult.printouts['Posición'][0].lat;
-		let lon = thisResult.printouts['Posición'][0].lon;
-		let author = thisResult.printouts['Autor'][0].fulltext;
-		let title = thisResult.fulltext;
-		let content = thisResult.printouts['Nota'][0];
-		// console.log(lat, lon, author, title, t);
-		// only create complete notes
-		if (!isNaN(lat) &&
-			!isNaN(lon) &&
-			typeof title === 'string' &&
-			typeof t === 'string' &&
-			typeof author === 'string') {
-			let thisNote = new Note(lat, lon, title, content, author);
-			notes.push(thisNote);
-			print("note "+title+" created successfully")
-		}
-	}
 }
 
 let g; // other graphics
@@ -148,7 +149,7 @@ function windowResized() {
 }
 
 function draw() {
-	//background(g.get());
+	background(g.get());
 	Engine.update(engine);
 
 	for (let note of notes) {
@@ -209,6 +210,8 @@ function touchEnded() {
 		}
 	}
 	lastTime = millis();
+	mouseX = -100;
+	mouseY = -100;
 }
 
 function saveFile() {
@@ -219,6 +222,7 @@ function saveFile() {
 }
 
 function displayNoteTitle(note) {
+	print("titles!");
 	fill(150, 30, 0, 150);
 	textFont(sansBold);
 	textSize(16);
@@ -236,12 +240,13 @@ function displayNoteTitle(note) {
 }
 
 function displayNoteContent(note) {
+	g.textFont(serif);
 	g.textSize(48);
 	g.fill(80, 145);
 	g.text(note.content, 0, 30, w, h - 30);
 }
 function updateGraphics() {
- 	// draw springs trails
+	// draw springs trails
 	for (spring of springs) {
 		g.stroke(180, 30, 0, 45);
 		strokeWeight(1);

@@ -9,8 +9,7 @@ class Note {
         this.title = title;
         this.content = content;
         this.author = author;
-        this.radius = map(this.text.length, 0, 50, 6, 25);
-        this.r = this.radius;
+        this.r = map(this.content.length, 0, 50, 6, 25);
         this.over = false;
         this.touched = false;
         this.angle;
@@ -23,7 +22,7 @@ class Note {
         World.add(world, this.body);
     }
     rollover(x, y) {
-        if (dist(this.x, this.y, x, y) < this.radius) {
+        if (dist(this.x, this.y, x, y) < this.r) {
             this.over = true;
         } else {
             this.over = false;
