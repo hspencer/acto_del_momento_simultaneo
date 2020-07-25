@@ -32,7 +32,7 @@ function preload() {
 	w = document.getElementById("p5").offsetWidth;
 	h = document.getElementById("p5").offsetHeight;
 	let url = "https://wiki.ead.pucv.cl/api.php?action=ask&format=json&maxlag=2000&uselang=user&errorformat=bc&query=[[Categor%C3%ADa:Acto%20del%20momento%20simult%C3%A1neo]]|%3FNota|%3FAutor|%3FPosici%C3%B3n|%3FImagen";
-	data = loadJSON(url, gotData, 'jsonp');
+	data = loadJSON("data.json", gotData, 'jsonp');//url, gotData, 'jsonp');
 	// fonts
 	serif = loadFont("fonts/Alegreya-Regular.ttf");
 	sans = loadFont("fonts/AlegreyaSans-Light.ttf");
@@ -56,6 +56,8 @@ function gotData(response) {
 		if (maxlat < lat) { maxlat = lat; }
 		if (maxlon < lon) { maxlon = lon; }
 	}
+	print("lat range: "+minlat+", "+maxlat);
+	print("lon range. "+minlon+", "+maxlon);
 }
 
 function createObjects() {
@@ -71,10 +73,8 @@ function createObjects() {
 	World.add(world, mConstraint);
 
 	/// limits
-	// top
-
 	let thickness = 500;
-
+	// top
 	boundaries.push(new Boundary(w / 2, 0 - thickness / 2, width, thickness, 0));
 
 	// bottom
@@ -85,12 +85,13 @@ function createObjects() {
 	boundaries.push(new Boundary(w + thickness / 2, h / 2, thickness, height * 15, 0));
 
 	for (let key in data.query.results) {
+		console.log(key);
 		let thisResult = data.query.results[key];
 		let lat = thisResult.printouts['Posición'][0].lat;
 		let lon = thisResult.printouts['Posición'][0].lon;
 		let author = thisResult.printouts['Autor'][0].fulltext;
 		let title = thisResult.fulltext;
-		let t = thisResult.printouts['Nota'][0];
+		let content = thisResult.printouts['Nota'][0];
 		// console.log(lat, lon, author, title, t);
 		// only create complete notes
 		if (!isNaN(lat) &&
@@ -98,8 +99,9 @@ function createObjects() {
 			typeof title === 'string' &&
 			typeof t === 'string' &&
 			typeof author === 'string') {
-			let thisNote = new Note(lat, lon, title, t, author);
+			let thisNote = new Note(lat, lon, title, content, author);
 			notes.push(thisNote);
+			print("note "+title+" created successfully")
 		}
 	}
 }
@@ -108,6 +110,7 @@ let g; // other graphics
 function createBlendGraphics() {
 	g = createGraphics(w, h);
 	g.background(255);
+	print("g Graphics created");
 }
 
 let btnS;
@@ -121,10 +124,6 @@ function setup() {
 	createMatterStuff();
 	createObjects();
 	createBlendGraphics();
-	// btnU = createButton("U");
-	// btnU.parent('btns');
-	// btnU.mousePressed(unlinkAll);
-
 	btnS = createButton("F");
 	btnS.parent('btns');
 	btnS.mousePressed(saveFile);
@@ -149,7 +148,7 @@ function windowResized() {
 }
 
 function draw() {
-	background(g.get());
+	//background(g.get());
 	Engine.update(engine);
 
 	for (let note of notes) {
@@ -168,7 +167,6 @@ function draw() {
 		stroke(180, 30, 0, 160);
 		strokeWeight(.25);
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
-
 	}
 
 	if (mConstraint.body) {
@@ -214,37 +212,36 @@ function touchEnded() {
 }
 
 function saveFile() {
-	let filename = "" + year() + month() + day() + "-" + hour() + minute() + second() + ".png";
+	let filename = "acto-del-momento-simultaneo-" + year() + month() + day() + "-" + hour() + minute() + second() + ".png";
 	let file = createImage(width, height);
 	file = get();
 	file.save(filename, 'png');
 }
 
 function displayNoteTitle(note) {
-	g.fill(180, 30, 0);
-	g.textFont(serif);
-	g.textSize(16);
-	g.noStroke();
-	g.text(note.title.toUpperCase(), 0, 20);
-	let tw = g.textWidth(note.title.toUpperCase());
-	g.textFont(serif);
-	g.fill(0, 190);
-	let aw = g.textWidth(" - " + note.author);
+	fill(150, 30, 0, 150);
+	textFont(sansBold);
+	textSize(16);
+	noStroke();
+	text(note.title.toUpperCase(), 0, 20);
+	let tw = textWidth(note.title.toUpperCase());
+	textFont(serif);
+	fill(0, 130);
+	let aw = textWidth(" - " + note.author);
 	if (tw + aw < w) {
-		g.text(" - " + note.author, tw, 20);
+		text(" - " + note.author, tw, 20);
 	} else {
-		g.text(note.author, 0, 20 + textAscent());
+		text(note.author, 0, 20 + textAscent());
 	}
 }
 
 function displayNoteContent(note) {
 	g.textSize(48);
-	g.fill(80, 150);
-	g.text(note.text, 0, 30, w, h - 30);
+	g.fill(80, 145);
+	g.text(note.content, 0, 30, w, h - 30);
 }
-
 function updateGraphics() {
-	// draw springs trails
+ 	// draw springs trails
 	for (spring of springs) {
 		g.stroke(180, 30, 0, 45);
 		strokeWeight(1);

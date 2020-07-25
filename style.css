@@ -14,13 +14,15 @@ canvas {
 }
 
 #p5_loading {
-  color: gray;
-  position: absolute;
-  top: 45vh;
-  display: block;
+  color: #aaa;
   width: 100%;
   text-align: center;
-  font-weight: 300;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 26px;
 }
 
 #p5{
@@ -34,5 +36,5 @@ canvas {
 }
 
 #btns button{
-  margin-left: 1ex;
+  padding: .3ex 1ex;
 }

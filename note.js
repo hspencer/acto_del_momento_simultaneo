@@ -1,5 +1,5 @@
 class Note {
-    constructor(lat, lon, title, text, author) {
+    constructor(lat, lon, title, content, author) {
         this.connectedTo = "nothing";
         this.springDist = 0;
         this.creatingSpring = false;
@@ -7,7 +7,7 @@ class Note {
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.title = title;
-        this.text = text;
+        this.content = content;
         this.author = author;
         this.radius = map(this.text.length, 0, 50, 6, 25);
         this.r = this.radius;
