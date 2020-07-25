@@ -222,20 +222,19 @@ function saveFile() {
 }
 
 function displayNoteTitle(note) {
-	print("titles!");
-	fill(150, 30, 0, 150);
-	textFont(sansBold);
-	textSize(16);
-	noStroke();
-	text(note.title.toUpperCase(), 0, 20);
-	let tw = textWidth(note.title.toUpperCase());
-	textFont(serif);
-	fill(0, 130);
-	let aw = textWidth(" - " + note.author);
+	g.fill(150, 30, 0, 150);
+	g.textFont(sansBold);
+	g.textSize(16);
+	g.noStroke();
+	g.text(note.title.toUpperCase(), 0, 20);
+	let tw = g.textWidth(note.title.toUpperCase());
+	g.textFont(serif);
+	g.fill(0, 130);
+	let aw = g.textWidth(" - " + note.author);
 	if (tw + aw < w) {
-		text(" - " + note.author, tw, 20);
+		g.text(" - " + note.author, tw, 20);
 	} else {
-		text(note.author, 0, 20 + textAscent());
+		g.text(note.author, 0, 20 + textAscent());
 	}
 }
 
@@ -251,7 +250,13 @@ function updateGraphics() {
 		g.stroke(180, 30, 0, 45);
 		strokeWeight(1);
 		g.line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
-
+	}
+	for(n of notes){
+		if(n.touched){
+			g.stroke(0, 190);
+			g.strokeWeight(1);
+			g.point(n.x, n.y);	
+		}
 	}
 	g.blendMode(ADD);
 	g.fill(255, 1);
