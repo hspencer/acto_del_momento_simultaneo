@@ -31,7 +31,7 @@ function preload() {
 	w = document.getElementById("p5").offsetWidth;
 	h = document.getElementById("p5").offsetHeight;
 	let url = "https://wiki.ead.pucv.cl/api.php?action=ask&format=json&maxlag=2000&uselang=user&errorformat=bc&query=[[Categor%C3%ADa:Acto%20del%20momento%20simult%C3%A1neo]]|%3FNota|%3FAutor|%3FPosici%C3%B3n|%3FImagen";
-	data = loadJSON("data.json", gotData, 'json');//url, gotData, 'jsonp');
+	data = loadJSON(url, gotData, 'jsonp');
 	// fonts
 	serif = loadFont("fonts/Alegreya-Regular.ttf");
 	sans = loadFont("fonts/AlegreyaSans-Light.ttf");
@@ -222,19 +222,19 @@ function saveFile() {
 }
 
 function displayNoteTitle(note) {
-	g.fill(150, 30, 0, 150);
-	g.textFont(sansBold);
-	g.textSize(16);
-	g.noStroke();
-	g.text(note.title.toUpperCase(), 0, 20);
-	let tw = g.textWidth(note.title.toUpperCase());
-	g.textFont(serif);
-	g.fill(0, 130);
-	let aw = g.textWidth(" - " + note.author);
+	fill(150, 30, 0, 150);
+	textFont(sansBold);
+	textSize(16);
+	noStroke();
+	text(note.title.toUpperCase(), 0, 20);
+	let tw = textWidth(note.title.toUpperCase());
+	textFont(serif);
+	fill(0, 130);
+	let aw = textWidth(" - " + note.author);
 	if (tw + aw < w) {
-		g.text(" - " + note.author, tw, 20);
+		text(" - " + note.author, tw, 20);
 	} else {
-		g.text(note.author, 0, 20 + textAscent());
+		text(note.author, 0, 20 + textAscent());
 	}
 }
 
