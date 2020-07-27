@@ -149,6 +149,7 @@ function windowResized() {
 }
 
 function draw() {
+	updateGraphics();
 	background(g.get());
 	Engine.update(engine);
 
@@ -166,7 +167,7 @@ function draw() {
 	// draw springs
 	for (spring of springs) {
 		stroke(180, 30, 0, 160);
-		strokeWeight(.25);
+		strokeWeight(.75);
 		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 	}
 
@@ -185,7 +186,6 @@ function draw() {
 	if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {
 		mConstraint.constraint.bodyB = null;
 	}
-	updateGraphics();
 }
 
 function mouseClicked() {
@@ -241,14 +241,15 @@ function displayNoteTitle(note) {
 function displayNoteContent(note) {
 	g.textFont(serif);
 	g.textSize(48);
-	g.fill(80, 145);
+	g.noStroke();
+	g.fill(80, 95);
 	g.text(note.content, 0, 30, w, h - 30);
 }
 function updateGraphics() {
 	// draw springs trails
 	for (spring of springs) {
-		g.stroke(180, 30, 0, 45);
-		strokeWeight(1);
+		g.stroke(180, 30, 0, 25);
+		g.strokeWeight(1);
 		g.line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 	}
 	for(n of notes){

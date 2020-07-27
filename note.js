@@ -1,3 +1,5 @@
+/** a note is a note is a note  */
+
 class Note {
     constructor(lat, lon, title, content, author) {
         this.connectedTo = "nothing";
@@ -54,8 +56,14 @@ class Note {
         }
         if (!this.over && this.touched) {
             stroke(0);
-            strokeWeight(3);
+            strokeWeight(5);
             point(0, 0);
+            g.blendMode(MULTIPLY);
+            g.stroke(0);
+            g.strokeWeight(5);
+            g.point(0, 0);
+            g.blendMode(BLEND);
+            
         }
         if (!this.over && !this.touched) {
             stroke(0, 45);
