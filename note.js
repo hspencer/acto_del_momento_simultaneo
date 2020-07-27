@@ -3,7 +3,7 @@ class Note {
         this.connectedTo = "nothing";
         this.springDist = 0;
         this.creatingSpring = false;
-        let margin = w / 5;
+        let margin = w / 48;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.title = title;
@@ -60,7 +60,7 @@ class Note {
         if (!this.over && !this.touched) {
             stroke(0, 45);
             strokeWeight(1.5);
-            fill(190, 25);
+            fill(0, 125);
             ellipse(0, 0, this.r * 2);
         }
 
@@ -68,10 +68,10 @@ class Note {
 
         if (this.creatingSpring) {
             // paint growing circle
-            noFill();
-            stroke(0, 10);
-            strokeWeight(3);
-            ellipse(this.x, this.y, this.springDist * 2);
+            g.fill(0, 25);
+            g.blendMode(MULTIPLY);
+            g.stroke(0, 10);
+            g.ellipse(this.x, this.y, this.springDist * 2);
             // check all other notes
             for (let other of notes) {
                 // if its different and not already connected
