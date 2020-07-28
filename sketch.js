@@ -220,6 +220,7 @@ function saveFile() {
 	let file = createImage(width, height);
 	file = get();
 	file.save(filename, 'png');
+	setup();
 }
 
 function displayNoteTitle(note) {
