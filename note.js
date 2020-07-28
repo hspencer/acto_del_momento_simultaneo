@@ -52,7 +52,7 @@ class Note {
         }
         if (this.over && !this.touched) {
             fill(this.col + "FF");
-            stroke(180, 30, 0, 250);
+            stroke(0, 150);
             strokeWeight(1);
             ellipse(0, 0, this.r * 2);
         }
@@ -94,16 +94,10 @@ class Note {
                     let d = dist(this.x, this.y, other.x, other.y);
                     // if its closer that the growing circle
                     if (d <= this.springDist) {
-                        let options = {
-                            label: "spring",
-                            length: d,
-                            bodyA: this.body,
-                            bodyB: other.body,
-                            stiffness: 0.891
-                        }
                         this.connectedTo = other.title;
                         // create new spring
-
+                        let spring = new Spring(this.body, other.body, d, this.col);
+                        springs.push(spring);
                         this.creatingSpring = false;
                     }
                 }
@@ -129,12 +123,16 @@ class Spring {
         }
         let spring = Constraint.create(options);
         World.add(world, spring);
-        springs.push(spring);
+    }
+    display(){
+        stroke(this.col);
+        strokeWeight(.75);
+        line(this.bodyA.position.x, this.bodyA.position.y, this.bodyB.position.x, this.bodyB.position.y);
     }
 }
 
 
-let col = ["#ffb400", "#e58637", "#d6423b", "#b41039", "#420c30", "#fe60a1", "#c961f7", "#ff734c", "#3bc7ff", "#8089ff"];
+let col = ["#DB4813", "#740013", "#74009D", "#DEC449", "#271262", "#A6E94E", "#FF374A", "#6BA4FF", "#1451FA", "#7014FA", "#107040"];
 
 function getCol() {
     let i = Math.floor(random(col.length));

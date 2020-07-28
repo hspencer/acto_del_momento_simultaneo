@@ -28,13 +28,3 @@ canvas {
 #p5{
   height: 100vh;
 }
-
-#btns{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-#btns button{
-  padding: .3ex 1ex;
-}

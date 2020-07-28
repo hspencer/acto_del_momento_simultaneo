@@ -8,6 +8,8 @@ let sketch; // html canvas object
 let notes;  // array of visual objects
 let w, h;   // global width and height
 let lastTime = 0;
+let n = 128;
+let springs;
 
 // matter aliases : thanks Dan Shiffman and CodingTrain, Nature of Code, etc...
 var Engine = Matter.Engine,
@@ -32,12 +34,10 @@ function preload() {
 
 
 function createObjects() {
-	let n = 500;
 	createConstraints();
 	for (let i = 0; i < n; i++) {
 		let thisNote = new Note();
 		notes.push(thisNote);
-
 	}
 }
 
@@ -74,9 +74,6 @@ function createBlendGraphics() {
 	print("g Graphics created");
 }
 
-let btnS;
-let springs;
-
 function setup() {
 	sketch = createCanvas(w, h);
 	notes = [];
@@ -85,9 +82,6 @@ function setup() {
 	createMatterStuff();
 	createObjects();
 	createBlendGraphics();
-	btnS = createButton("F");
-	btnS.parent('btns');
-	btnS.mousePressed(saveFile);
 }
 
 function createMatterStuff() {
@@ -119,9 +113,7 @@ function draw() {
 
 	// draw springs
 	for (spring of springs) {
-		stroke(180, 30, 0, 160);
-		strokeWeight(.75);
-		line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
+		spring.display();
 	}
 
 	if (mConstraint.body) {
@@ -178,7 +170,7 @@ function saveFile() {
 function updateGraphics() {
 	// draw springs trails
 	for (spring of springs) {
-		g.stroke(180, 30, 0, 25);
+		g.stroke(spring.col + "33");
 		g.strokeWeight(1);
 		g.line(spring.bodyA.position.x, spring.bodyA.position.y, spring.bodyB.position.x, spring.bodyB.position.y);
 	}
