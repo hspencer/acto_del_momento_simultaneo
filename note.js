@@ -1,24 +1,26 @@
 /** a note is a note is a note  */
 
 class Note {
-    constructor(lat, lon, title, content, author) {
+    constructor() {
         this.connectedTo = "nothing";
-        this.springDist = 0;
+        this.r = random(5, 15);
+        this.springDist = this.r;
         this.creatingSpring = false;
         let margin = w / 48;
-        this.x = map(lon, minlon, maxlon, margin, w - margin);
-        this.y = map(lat, minlat, maxlat, h - margin, margin);
-        this.title = title;
-        this.content = content;
-        this.author = author;
-        this.r = map(this.content.length, 0, 50, 6, 25);
+        this.x = random(margin, w - margin);
+        this.y = random(h - margin, margin);
+        this.col = getCol();
         this.over = false;
         this.touched = false;
-        this.angle;
+        let f = {
+            x: random(-.015, .015),
+            y: random(-.015, .015)
+        }
         let options = {
             friction: 0,
+            frictionAir: 0,
             restitution: 0.77,
-            mass: 30
+            force: f
         };
         this.body = Bodies.circle(this.x, this.y, this.r, options);
         World.add(world, this.body);
@@ -44,12 +46,12 @@ class Note {
             fill(180, 30, 0, 45);
             noStroke();
             ellipse(0, 0, this.r * 2);
-            stroke(0);
+            stroke(this.col);
             strokeWeight(3);
             point(0, 0);
         }
         if (this.over && !this.touched) {
-            fill(180, 30, 0, 45);
+            fill(this.col + "FF");
             stroke(180, 30, 0, 250);
             strokeWeight(1);
             ellipse(0, 0, this.r * 2);
@@ -67,12 +69,12 @@ class Note {
             g.strokeWeight(5);
             g.point(0, 0);
             g.blendMode(BLEND);
-            
+
         }
         if (!this.over && !this.touched) {
             stroke(0, 45);
             strokeWeight(1.5);
-            fill(0, 125);
+            fill(this.col + "66");
             ellipse(0, 0, this.r * 2);
         }
 
@@ -80,7 +82,7 @@ class Note {
 
         if (this.creatingSpring) {
             // paint growing circle
-            g.fill(0, 25);
+            g.fill(this.col + "22");
             g.blendMode(MULTIPLY);
             g.stroke(0, 5);
             g.ellipse(this.x, this.y, this.springDist * 2);
@@ -97,18 +99,44 @@ class Note {
                             length: d,
                             bodyA: this.body,
                             bodyB: other.body,
-                            stiffness: 1
+                            stiffness: 0.891
                         }
                         this.connectedTo = other.title;
                         // create new spring
-                        let spring = Constraint.create(options);
-                        World.add(world, spring);
-                        springs.push(spring);
+
                         this.creatingSpring = false;
                     }
-                    this.springDist++;
                 }
             }
+            this.springDist++;
         }
     }
+}
+
+
+class Spring {
+    constructor(body1, body2, len, col) {
+        this.bodyA = body1;
+        this.bodyB = body2;
+        this.length = len;
+        this.col = col;
+        let options = {
+            label: "spring",
+            length: this.length,
+            bodyA: this.bodyA,
+            bodyB: this.bodyB,
+            stiffness: 0.891
+        }
+        let spring = Constraint.create(options);
+        World.add(world, spring);
+        springs.push(spring);
+    }
+}
+
+
+let col = ["#ffb400", "#e58637", "#d6423b", "#b41039", "#420c30", "#fe60a1", "#c961f7", "#ff734c", "#3bc7ff", "#8089ff"];
+
+function getCol() {
+    let i = Math.floor(random(col.length));
+    return col[i];
 }
