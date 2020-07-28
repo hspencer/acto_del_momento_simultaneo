@@ -77,7 +77,7 @@ function createObjects() {
 		// 	typeof author === 'string') {
 			let thisNote = new Note(lat, lon, title, content, author);
 			notes.push(thisNote);
-			print("note " + title + " created successfully")
+			//print("note " + title + " created successfully")
 		//}
 	}
 }
@@ -88,7 +88,8 @@ function createConstraints() {
 	canvasmouse.pixelRatio = pixelDensity();
 	let options = {
 		mouse: canvasmouse,
-		stiffness: 1
+		angularStiffness: 2,
+		stiffness: 2
 	};
 
 	mConstraint = MouseConstraint.create(engine, options);

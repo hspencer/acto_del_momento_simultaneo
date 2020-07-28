@@ -55,6 +55,10 @@ class Note {
             ellipse(0, 0, this.r * 2);
         }
         if (!this.over && this.touched) {
+            noFill();
+            strokeWeight(2);
+            stroke(0, 20);
+            ellipse(0, 0, this.r * 2);
             stroke(0);
             strokeWeight(5);
             point(0, 0);
@@ -78,7 +82,7 @@ class Note {
             // paint growing circle
             g.fill(0, 25);
             g.blendMode(MULTIPLY);
-            g.stroke(0, 10);
+            g.stroke(0, 5);
             g.ellipse(this.x, this.y, this.springDist * 2);
             // check all other notes
             for (let other of notes) {
