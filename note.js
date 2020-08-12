@@ -8,6 +8,8 @@ class Note {
         let margin = w / 24;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
+        this.px = this.x;
+        this.py = this.y;
         this.title = title;
         this.content = content;
         this.author = author;
@@ -63,9 +65,9 @@ class Note {
             strokeWeight(5);
             point(0, 0);
             g.blendMode(MULTIPLY);
-            g.stroke(0, 75);
-            g.strokeWeight(3);
-            g.point(this.body.position.x, this.body.position.y);
+            g.stroke(0, 150);
+            g.strokeWeight(1);
+            g.line(this.px, this.py, this.x, this.y);
             g.blendMode(BLEND);
             
         }
@@ -110,5 +112,7 @@ class Note {
                 }
             }
         }
+    this.px = this.x;
+    this.py = this.y;
     }
 }
