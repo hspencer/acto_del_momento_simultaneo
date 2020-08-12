@@ -7,6 +7,7 @@
 let sketch; // html canvas object
 let data;   // JSON data object
 let notes;  // array of visual objects
+let springs;
 let w, h;   // global width and height
 let lastTime = 0;
 
@@ -26,6 +27,9 @@ let boundaries = [];
 // typefaces
 let serif, sans, sansBold;
 
+let g; // other graphics
+let btnS; // save button
+
 function preload() {
 	// calculate width and height from html div
 	w = document.getElementById("p5").offsetWidth;
@@ -36,6 +40,9 @@ function preload() {
 	serif = loadFont("fonts/Alegreya-Regular.ttf");
 	sans = loadFont("fonts/AlegreyaSans-Light.ttf");
 	sansBold = loadFont("fonts/AlegreyaSans-Bold.ttf");
+	btnS = createButton("F");
+	btnS.parent('btns');
+	btnS.mousePressed(saveFile);
 }
 // geographical boundaries
 let minlat, maxlat, minlon, maxlon;
@@ -98,25 +105,21 @@ function createConstraints() {
 	/// limits
 	let thickness = 500;
 	// top
-	boundaries.push(new Boundary(w / 2, 0 - thickness / 2, width, thickness, 0));
+	boundaries.push(new Boundary(w / 2, 0 - thickness / 2, w*2, thickness, 0));
 
 	// bottom
-	boundaries.push(new Boundary(w / 2, height + thickness / 2, width, thickness, 0));
+	boundaries.push(new Boundary(w / 2, height + thickness / 2, w*2, thickness, 0));
 
 	// sides
 	boundaries.push(new Boundary(-thickness / 2, h / 2, thickness, height * 15, 0));
 	boundaries.push(new Boundary(w + thickness / 2, h / 2, thickness, height * 15, 0));
 }
 
-let g; // other graphics
 function createBlendGraphics() {
 	g = createGraphics(w, h);
 	g.background(255);
 	print("g Graphics created");
 }
-
-let btnS;
-let springs;
 
 function setup() {
 	sketch = createCanvas(w, h);
@@ -126,9 +129,6 @@ function setup() {
 	createMatterStuff();
 	createObjects();
 	createBlendGraphics();
-	btnS = createButton("F");
-	btnS.parent('btns');
-	btnS.mousePressed(saveFile);
 }
 
 function createMatterStuff() {

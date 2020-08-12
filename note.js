@@ -5,13 +5,13 @@ class Note {
         this.connectedTo = "nothing";
         this.springDist = 0;
         this.creatingSpring = false;
-        let margin = w / 48;
+        let margin = w / 24;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.title = title;
         this.content = content;
         this.author = author;
-        this.r = map(this.content.length, 0, 50, 6, 25);
+        this.r = map(this.content.length, 0, 50, 3, 18);
         this.over = false;
         this.touched = false;
         this.angle;
@@ -63,9 +63,9 @@ class Note {
             strokeWeight(5);
             point(0, 0);
             g.blendMode(MULTIPLY);
-            g.stroke(0);
-            g.strokeWeight(5);
-            g.point(0, 0);
+            g.stroke(0, 75);
+            g.strokeWeight(3);
+            g.point(this.body.position.x, this.body.position.y);
             g.blendMode(BLEND);
             
         }
