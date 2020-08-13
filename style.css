@@ -36,5 +36,8 @@ canvas {
 }
 
 #btns button{
-  padding: .3ex 1ex;
+  text-align: center;
+  display: inline-block;
+  width: 48px;
+  padding: 0;
 }

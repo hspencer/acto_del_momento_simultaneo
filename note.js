@@ -5,7 +5,7 @@ class Note {
         this.connectedTo = "nothing";
         this.springDist = 0;
         this.creatingSpring = false;
-        let margin = w / 24;
+        let margin = w / 10;
         this.x = map(lon, minlon, maxlon, margin, w - margin);
         this.y = map(lat, minlat, maxlat, h - margin, margin);
         this.px = this.x;
@@ -13,7 +13,7 @@ class Note {
         this.title = title;
         this.content = content;
         this.author = author;
-        this.r = map(this.content.length, 0, 50, 3, 18);
+        this.r = map(this.content.length, 0, 60, 5, 20);
         this.over = false;
         this.touched = false;
         this.angle;
@@ -41,45 +41,42 @@ class Note {
         push();
         translate(pos.x, pos.y);
         rotate(this.angle);
-
-        if (this.over && this.touched) {
-            fill(180, 30, 0, 45);
-            noStroke();
-            ellipse(0, 0, this.r * 2);
-            stroke(0);
-            strokeWeight(3);
-            point(0, 0);
-        }
-        if (this.over && !this.touched) {
-            fill(180, 30, 0, 45);
-            stroke(180, 30, 0, 250);
-            strokeWeight(1);
-            ellipse(0, 0, this.r * 2);
-        }
-        if (!this.over && this.touched) {
-            noFill();
-            strokeWeight(2);
-            stroke(0, 20);
-            ellipse(0, 0, this.r * 2);
-            stroke(0);
-            strokeWeight(5);
-            point(0, 0);
-            g.blendMode(MULTIPLY);
-            g.stroke(0, 150);
-            g.strokeWeight(1);
-            g.line(this.px, this.py, this.x, this.y);
-            g.blendMode(BLEND);
-            
-        }
-        if (!this.over && !this.touched) {
-            stroke(0, 45);
-            strokeWeight(1.5);
-            fill(0, 125);
-            ellipse(0, 0, this.r * 2);
-        }
-
+            if(this.touched){
+                g.blendMode(MULTIPLY);
+                g.stroke(0, 150);
+                g.strokeWeight(1);
+                g.line(this.px, this.py, this.x, this.y);
+                g.blendMode(BLEND);
+                if (this.over) {
+                    fill(180, 30, 0, 45);
+                    noStroke();
+                    ellipse(0, 0, this.r * 2);
+                    stroke(0);
+                    strokeWeight(3);
+                    point(0, 0); 
+                }else{
+                    noFill();
+                    strokeWeight(2);
+                    stroke(0, 20);
+                    ellipse(0, 0, this.r * 2);
+                    stroke(0);
+                    strokeWeight(5);
+                    point(0, 0);
+                }
+            }else{
+                if (this.over) {
+                    fill(180, 30, 0, 45);
+                    stroke(180, 30, 0, 250);
+                    strokeWeight(1);
+                    ellipse(0, 0, this.r * 2);
+                }else{
+                    stroke(0, 45);
+                    strokeWeight(1.5);
+                    fill(0, 125);
+                    ellipse(0, 0, this.r * 2);
+                }
+            }
         pop();
-
         if (this.creatingSpring) {
             // paint growing circle
             g.fill(0, 25);
@@ -112,6 +109,7 @@ class Note {
                 }
             }
         }
+    // for drawing the trails connecting current to previous position
     this.px = this.x;
     this.py = this.y;
     }

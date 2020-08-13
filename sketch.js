@@ -95,8 +95,9 @@ function createConstraints() {
 	canvasmouse.pixelRatio = pixelDensity();
 	let options = {
 		mouse: canvasmouse,
-		angularStiffness: 2,
-		stiffness: 2
+		angularStiffness: 0.999,
+		stiffness: 0.999,
+		length: 0.01
 	};
 
 	mConstraint = MouseConstraint.create(engine, options);
@@ -178,9 +179,8 @@ function draw() {
 		let m = mConstraint.mouse.position;
 
 		// paint line while dragging object
-
 		strokeWeight(2);
-		stroke(180, 30, 0, 140);
+		stroke(200);
 		line(pos.x + offset.x, pos.y + offset.y, m.x, m.y);
 	}
 
