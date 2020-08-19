@@ -13,7 +13,7 @@ class Note {
         this.title = title;
         this.content = content;
         this.author = author;
-        this.r = map(this.content.length, 0, 60, 5, 20);
+        this.r = map(this.content.length, 0, 130, 3, 18);
         this.over = false;
         this.touched = false;
         this.angle;
@@ -105,7 +105,7 @@ class Note {
                         springs.push(spring);
                         this.creatingSpring = false;
                     }
-                    this.springDist++;
+                    this.springDist += .1;
                 }
             }
         }
