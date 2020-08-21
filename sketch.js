@@ -54,6 +54,7 @@ function gotData(response) {
 	maxlon = maxlat;
 	for (let key in data.query.results) {
 		let thisResult = data.query.results[key];
+		console.log(thisResult.fulltext);
 		let lat = thisResult.printouts['Posición'][0].lat;
 		let lon = thisResult.printouts['Posición'][0].lon;
 		// calc geo boundaries
