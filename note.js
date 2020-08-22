@@ -2,6 +2,7 @@
 
 class Note {
     constructor(lat, lon, title, content, author) {
+        // console.log("creating: "+title);
         this.connectedTo = "nothing";
         this.springDist = 0;
         this.creatingSpring = false;
@@ -13,7 +14,7 @@ class Note {
         this.title = title;
         this.content = content;
         this.author = author;
-        this.r = map(this.content.length, 0, 130, 3, 18);
+        this.r = map(this.title.length, 2, 40, 3, 12);
         this.over = false;
         this.touched = false;
         this.angle;
