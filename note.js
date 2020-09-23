@@ -106,7 +106,7 @@ class Note {
                         springs.push(spring);
                         this.creatingSpring = false;
                     }
-                    this.springDist += .1;
+                    this.springDist += 0.01;  /* i don't understand this number, it should be 1 */
                 }
             }
         }
