@@ -1,0 +1,3980 @@
+{
+    "query": {
+        "printrequests": [
+            {
+                "label": "",
+                "key": "",
+                "redi": "",
+                "typeid": "_wpg",
+                "mode": 2
+            },
+            {
+                "label": "Nota",
+                "key": "Nota",
+                "redi": "",
+                "typeid": "_txt",
+                "mode": 1,
+                "format": ""
+            },
+            {
+                "label": "Autor",
+                "key": "Autor",
+                "redi": "",
+                "typeid": "_wpg",
+                "mode": 1,
+                "format": ""
+            },
+            {
+                "label": "Posici\u00f3n",
+                "key": "Posici\u00f3n",
+                "redi": "",
+                "typeid": "_geo",
+                "mode": 1,
+                "format": ""
+            },
+            {
+                "label": "Imagen",
+                "key": "Imagen",
+                "redi": "",
+                "typeid": "_txt",
+                "mode": 1,
+                "format": ""
+            }
+        ],
+        "results": {
+            "A la lejania": {
+                "printouts": {
+                    "Nota": [
+                        "a la lejania tratamos de interactuar entre nosotros compartiendo nuestros trabajos,anecdotas,el dia a dia en el cual estamos viviendo."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Daniela Venegas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Daniela_Venegas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "A la lejania",
+                "fullurl": "https://wiki.ead.pucv.cl/A_la_lejania",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Acompa\u00f1amiento": {
+                "printouts": {
+                    "Nota": [
+                        "Un tiempo de constante compa\u00f1\u00eda con uno mismo, una oportunidad de apreciaci\u00f3n interior regalada."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Fuentes",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Fuentes",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Acompa\u00f1amiento",
+                "fullurl": "https://wiki.ead.pucv.cl/Acompa%C3%B1amiento",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Acto de Inicio 2do Semestre - Nicolas Dragas": {
+                "printouts": {
+                    "Nota": [
+                        "Componer y Obeservar"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Nicolas Dragas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Nicolas_Dragas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04053,
+                            "lon": -71.43283
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Acto de Inicio 2do Semestre - Nicolas Dragas",
+                "fullurl": "https://wiki.ead.pucv.cl/Acto_de_Inicio_2do_Semestre_-_Nicolas_Dragas",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Acto de inicio 2\u00b0 semestre": {
+                "printouts": {
+                    "Nota": [
+                        "reposo continuo entre mar y cielo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Sebastian Campos",
+                            "fullurl": "https://wiki.ead.pucv.cl/Sebastian_Campos",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Acto de inicio 2\u00b0 semestre",
+                "fullurl": "https://wiki.ead.pucv.cl/Acto_de_inicio_2%C2%B0_semestre",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Acto inicio 2 Semestre": {
+                "printouts": {
+                    "Nota": [
+                        "Estar anclados al presente y nuestras circunstancias sin ser prisionero de estas. Recordar el pasado con optimismo sin aferrarse a el."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Rut Guyman Puello",
+                            "fullurl": "https://wiki.ead.pucv.cl/Rut_Guyman_Puello",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Acto inicio 2 Semestre",
+                "fullurl": "https://wiki.ead.pucv.cl/Acto_inicio_2_Semestre",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Afrontar en lo lejano": {
+                "printouts": {
+                    "Nota": [
+                        "El afrontar lo que acontece en las afueras, el no poder controlarlo. El afrontar en el disimulo y de manera externa pero perteneciendo."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Valentina Dur\u00e1n",
+                            "fullurl": "https://wiki.ead.pucv.cl/Valentina_Dur%C3%A1n",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.01119,
+                            "lon": -71.54399
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Afrontar en lo lejano",
+                "fullurl": "https://wiki.ead.pucv.cl/Afrontar_en_lo_lejano",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Alargue constante": {
+                "printouts": {
+                    "Nota": [
+                        "Alargue constante de una espera"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca Alvarez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_Alvarez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Alargue constante",
+                "fullurl": "https://wiki.ead.pucv.cl/Alargue_constante",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Alcanzando un horizonte": {
+                "printouts": {
+                    "Nota": [
+                        "Observar perfiles a la lejan\u00eda"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Gonzalez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Gonzalez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.02141,
+                            "lon": -71.52728
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Alcanzando un horizonte",
+                "fullurl": "https://wiki.ead.pucv.cl/Alcanzando_un_horizonte",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Alma Infinita": {
+                "printouts": {
+                    "Nota": [
+                        "\u00bfCu\u00e1l es el alba perpetua de tu origen?"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Carlos Covarrubias",
+                            "fullurl": "https://wiki.ead.pucv.cl/Carlos_Covarrubias",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Alma Infinita",
+                "fullurl": "https://wiki.ead.pucv.cl/Alma_Infinita",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Amanecer": {
+                "printouts": {
+                    "Nota": [
+                        "Temprano lucen las directrices."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Manuel Sanfuentes",
+                            "fullurl": "https://wiki.ead.pucv.cl/Manuel_Sanfuentes",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Amanecer",
+                "fullurl": "https://wiki.ead.pucv.cl/Amanecer",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Amor solo": {
+                "printouts": {
+                    "Nota": [
+                        "profundizar en la soledad para encontrar a la \u00fanica persona que te puede sacar de ah\u00ed y enamorarte de ella"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Vicente Quezada Salfate",
+                            "fullurl": "https://wiki.ead.pucv.cl/Vicente_Quezada_Salfate",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Amor solo",
+                "fullurl": "https://wiki.ead.pucv.cl/Amor_solo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ansia contenida": {
+                "printouts": {
+                    "Nota": [
+                        "Esperando al t\u00e9rmino de esta pausa inesperada en lo cotidiano;"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Fernanda Vald\u00e9s",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fernanda_Vald%C3%A9s",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.98453,
+                            "lon": -71.53058
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Ansia contenida",
+                "fullurl": "https://wiki.ead.pucv.cl/Ansia_contenida",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ansias por el explorar": {
+                "printouts": {
+                    "Nota": [
+                        "Ansias por una la comparecencia libre"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Diego Toledo Otaegui",
+                            "fullurl": "https://wiki.ead.pucv.cl/Diego_Toledo_Otaegui",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Ansias por el explorar",
+                "fullurl": "https://wiki.ead.pucv.cl/Ansias_por_el_explorar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Arrimado": {
+                "printouts": {
+                    "Nota": [
+                        "Arrimado - condici\u00f3n de cima en plena ladera, una realidad de interior en el \u00e1rea p\u00fablica. Un medio coronado evidencia  que el recorrido antecede a las casas, de \u00e9ste se desprende lo dom\u00e9stico. - surco coronado."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ignacio Favilla",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ignacio_Favilla",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05301,
+                            "lon": -71.63712
+                        }
+                    ],
+                    "Imagen": [
+                        "12.18 Favilla 01.jpg"
+                    ]
+                },
+                "fulltext": "Arrimado",
+                "fullurl": "https://wiki.ead.pucv.cl/Arrimado",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Artista o copion": {
+                "printouts": {
+                    "Nota": [
+                        "Quiero, Debo, crear.\n\nno copiar, \u00bfque lo diferencia de representar?."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Rodrigo Parra",
+                            "fullurl": "https://wiki.ead.pucv.cl/Rodrigo_Parra",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Artista o copion",
+                "fullurl": "https://wiki.ead.pucv.cl/Artista_o_copion",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Asunci\u00f3n del mar": {
+                "printouts": {
+                    "Nota": [
+                        "Expectaci\u00f3n de la asunci\u00f3n del mar hacia las estrellas"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Vicente Fern\u00e1ndez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Vicente_Fern%C3%A1ndez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.9619,
+                            "lon": -71.54546
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Asunci\u00f3n del mar",
+                "fullurl": "https://wiki.ead.pucv.cl/Asunci%C3%B3n_del_mar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Atardecer distendido": {
+                "printouts": {
+                    "Nota": [
+                        "La gradiente de las nubes recoge los colores del atardecer"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Mar\u00eda Paz S\u00e1nchez Morales",
+                            "fullurl": "https://wiki.ead.pucv.cl/Mar%C3%ADa_Paz_S%C3%A1nchez_Morales",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.02913,
+                            "lon": -71.58416
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Atardecer distendido",
+                "fullurl": "https://wiki.ead.pucv.cl/Atardecer_distendido",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Atenci\u00f3n plena": {
+                "printouts": {
+                    "Nota": [
+                        "S\u00e9 el eterno viajero de tu presente"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Alanys P\u00e9rez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Alanys_P%C3%A9rez",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Atenci\u00f3n plena",
+                "fullurl": "https://wiki.ead.pucv.cl/Atenci%C3%B3n_plena",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Avanzar inevitable en la permanencia": {
+                "printouts": {
+                    "Nota": [
+                        "Avanzar inevitable en la permanencia"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Sof\u00eda Carrasco",
+                            "fullurl": "https://wiki.ead.pucv.cl/Sof%C3%ADa_Carrasco",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.02676,
+                            "lon": -71.58232
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Avanzar inevitable en la permanencia",
+                "fullurl": "https://wiki.ead.pucv.cl/Avanzar_inevitable_en_la_permanencia",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "A\u00f1oranza y recuerdo": {
+                "printouts": {
+                    "Nota": [
+                        "A\u00f1oranza de la luz distante que se asoma"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "B\u00e1rbara Vera",
+                            "fullurl": "https://wiki.ead.pucv.cl/B%C3%A1rbara_Vera",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "A\u00f1oranza y recuerdo",
+                "fullurl": "https://wiki.ead.pucv.cl/A%C3%B1oranza_y_recuerdo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "CONEXI\u00d3N": {
+                "printouts": {
+                    "Nota": [
+                        "Re-encontrarse y re-conectarse, con uno y lo que rodea."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Valentina Blanco",
+                            "fullurl": "https://wiki.ead.pucv.cl/Valentina_Blanco",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "CONEXI\u00d3N",
+                "fullurl": "https://wiki.ead.pucv.cl/CONEXI%C3%93N",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Calidez Invernal": {
+                "printouts": {
+                    "Nota": [
+                        "Casi al frente del veraneo artificial pese la bruma externa."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Josefa Antris",
+                            "fullurl": "https://wiki.ead.pucv.cl/Josefa_Antris",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Calidez Invernal",
+                "fullurl": "https://wiki.ead.pucv.cl/Calidez_Invernal",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Cambio de Habitad y Calma": {
+                "printouts": {
+                    "Nota": [
+                        "Con el cambio de habitad mis aires se vuelven turbios, el caos se vuelve com\u00fan y la calma, lejana pero venidera"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Andres Andrade Andrade",
+                            "fullurl": "https://wiki.ead.pucv.cl/Andres_Andrade_Andrade",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Cambio de Habitad y Calma",
+                "fullurl": "https://wiki.ead.pucv.cl/Cambio_de_Habitad_y_Calma",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Carencia": {
+                "printouts": {
+                    "Nota": [
+                        "Con Ingenio enfrentamos las CARENCIAS"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca Silva",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_Silva",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Carencia",
+                "fullurl": "https://wiki.ead.pucv.cl/Carencia",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Catarsis": {
+                "printouts": {
+                    "Nota": [
+                        "El cuerpo como un vago testigo. vienes llegando del exilio"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Tomas Arismendi",
+                            "fullurl": "https://wiki.ead.pucv.cl/Tomas_Arismendi",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.13447,
+                            "lon": -71.65881
+                        }
+                    ],
+                    "Imagen": [
+                        "Catarsis"
+                    ]
+                },
+                "fulltext": "Catarsis",
+                "fullurl": "https://wiki.ead.pucv.cl/Catarsis",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Cercan\u00eda mental": {
+                "printouts": {
+                    "Nota": [
+                        "En contraposici\u00f3n a lo sugerido, mediante la palabra...acercamos la mente del otro."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Vicente Del R\u00edo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Vicente_Del_R%C3%ADo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.00023,
+                            "lon": -71.49531
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Cercan\u00eda mental",
+                "fullurl": "https://wiki.ead.pucv.cl/Cercan%C3%ADa_mental",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Cielo Silvestre Admirado": {
+                "printouts": {
+                    "Nota": [
+                        "cielo libre y pasajero"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ignacia Far\u00edas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ignacia_Far%C3%ADas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Cielo Silvestre Admirado",
+                "fullurl": "https://wiki.ead.pucv.cl/Cielo_Silvestre_Admirado",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ciudad": {
+                "printouts": {
+                    "Nota": [
+                        "Continuidad entre verticalidades de ciudad"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Fernanda Monta\u00f1o",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fernanda_Monta%C3%B1o",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Ciudad",
+                "fullurl": "https://wiki.ead.pucv.cl/Ciudad",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Comodidad creciente": {
+                "printouts": {
+                    "Nota": [
+                        "los problemas son f\u00e1cilmente solucionables, siempre y cuando no sean tus problemas."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Claudio Acu\u00f1a",
+                            "fullurl": "https://wiki.ead.pucv.cl/Claudio_Acu%C3%B1a",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Comodidad creciente",
+                "fullurl": "https://wiki.ead.pucv.cl/Comodidad_creciente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Comunidad renaciente": {
+                "printouts": {
+                    "Nota": [
+                        "Aislada, la comunidad se fortalece, la cultura se enra\u00edza como una nueva planta, crece el nuevo bosque, decimos nosotros."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Domingo Croxatto Ullrich",
+                            "fullurl": "https://wiki.ead.pucv.cl/Domingo_Croxatto_Ullrich",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -46.62509,
+                            "lon": -72.67734
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Comunidad renaciente",
+                "fullurl": "https://wiki.ead.pucv.cl/Comunidad_renaciente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Con Ingenio podemos enfrentar las Carencias": {
+                "printouts": {
+                    "Nota": [],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca Silva",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_Silva",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Con Ingenio podemos enfrentar las Carencias",
+                "fullurl": "https://wiki.ead.pucv.cl/Con_Ingenio_podemos_enfrentar_las_Carencias",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Conciencia Aut\u00f3noma del Ahora": {
+                "printouts": {
+                    "Nota": [
+                        "Exito en el hablar del otro, \nme articula y nombra proyectandome en el ahora,\nsoy arrastrado al presente y \nno es un movimiento aut\u00f3nomo,\npero estoy consciente."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Yohanna Del Canto",
+                            "fullurl": "https://wiki.ead.pucv.cl/Yohanna_Del_Canto",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Conciencia Aut\u00f3noma del Ahora",
+                "fullurl": "https://wiki.ead.pucv.cl/Conciencia_Aut%C3%B3noma_del_Ahora",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Conectividad colectiva": {
+                "printouts": {
+                    "Nota": [
+                        "Conectividad colectiva"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Victor Della Chiara",
+                            "fullurl": "https://wiki.ead.pucv.cl/Victor_Della_Chiara",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Conectividad colectiva",
+                "fullurl": "https://wiki.ead.pucv.cl/Conectividad_colectiva",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Confinamiento sin luz": {
+                "printouts": {
+                    "Nota": [
+                        "Desde que comenz\u00f3 este confinamiento ya no me es posible salir, ya no se ven las cosas del mismo modo, la luz perdi\u00f3 su rumbo y la debo encontrar."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Kiara Hern\u00e1ndez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Kiara_Hern%C3%A1ndez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Confinamiento sin luz",
+                "fullurl": "https://wiki.ead.pucv.cl/Confinamiento_sin_luz",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Conocer sin salir": {
+                "printouts": {
+                    "Nota": [
+                        "En tiempos de aislamiento terminar conociendo m\u00e1s a la persona que mora junto a ti bajo el mismo techo como nunca antes en tiempo de libertad de circulaci\u00f3n, conocer gente y pensamientos de ti y de los tuyos hacia ellos con una calidez que no se hab\u00eda dado en la proximidad f\u00edsica. Conocer sin salir"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "David Silva Bernales",
+                            "fullurl": "https://wiki.ead.pucv.cl/David_Silva_Bernales",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04692,
+                            "lon": -71.60034
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Conocer sin salir",
+                "fullurl": "https://wiki.ead.pucv.cl/Conocer_sin_salir",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Conocerse a uno mismo": {
+                "printouts": {
+                    "Nota": [
+                        "Con tanto sucediendo mundialmente y personalmente, se puede quebrar y dudar de uno mismo, es por eso que el amor propio debe prevalecer en uno. Al final, no se esta mal si quien te acompa\u00f1a estando solo te hace feliz."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Martin Townsend",
+                            "fullurl": "https://wiki.ead.pucv.cl/Martin_Townsend",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.01639,
+                            "lon": -71.53987
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Conocerse a uno mismo",
+                "fullurl": "https://wiki.ead.pucv.cl/Conocerse_a_uno_mismo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Contenci\u00f3n que alberga la memoria": {
+                "printouts": {
+                    "Nota": [
+                        "Una nueva realidad que permanecer\u00e1 en la vivencia propia"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Valenzuela",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Valenzuela",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05095,
+                            "lon": -71.41846
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Contenci\u00f3n que alberga la memoria",
+                "fullurl": "https://wiki.ead.pucv.cl/Contenci%C3%B3n_que_alberga_la_memoria",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Cuarentena visual": {
+                "printouts": {
+                    "Nota": [
+                        "Mi campo se encuentra delimitado por los terrenos de mi casa, mis pupilas se dislumbras con lo que me permite abarcar desde mi vetana, deseosas del dia en que todo pueda regresar a la normalidad, pero simpre recordando estos acontecimientos, que te ense\u00f1an que es ser humano es fragil y diminuto, ante la fuerza de la naturaleza."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Josefina Pozzo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Josefina_Pozzo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.03058,
+                            "lon": -71.56054
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Cuarentena visual",
+                "fullurl": "https://wiki.ead.pucv.cl/Cuarentena_visual",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "DESIERTO FLORIDO": {
+                "printouts": {
+                    "Nota": [
+                        "quien recorre el desierto debe tener la fortaleza interior para no volverse en arena, si no que fluir en ella, apreciando la frescura de lo singular que no se ve con los ojos, para as\u00ed encontrar la celebraci\u00f3n."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Gabriela Mu\u00f1oz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Gabriela_Mu%C3%B1oz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "DESIERTO FLORIDO",
+                "fullurl": "https://wiki.ead.pucv.cl/DESIERTO_FLORIDO",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Demora": {
+                "printouts": {
+                    "Nota": [
+                        "conforme al tiempo, lo improvisto siempre contribuye a la maduraci\u00f3n de nuestras capacidades en realzar sus virtudes en tiempo y espacio."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Cristian Valdivia Sandoval",
+                            "fullurl": "https://wiki.ead.pucv.cl/Cristian_Valdivia_Sandoval",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Demora",
+                "fullurl": "https://wiki.ead.pucv.cl/Demora",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Dentro y Fuera": {
+                "printouts": {
+                    "Nota": [
+                        "El suelo hoy, dentro de la casa, seco, pero por la ventana se muestra fresco, mojado por las gotas de afuera."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Josefa Alexis Carrera Oyarce",
+                            "fullurl": "https://wiki.ead.pucv.cl/Josefa_Alexis_Carrera_Oyarce",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.34322,
+                            "lon": -71.62976
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Dentro y Fuera",
+                "fullurl": "https://wiki.ead.pucv.cl/Dentro_y_Fuera",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Descubrir presente en lejan\u00eda": {
+                "printouts": {
+                    "Nota": [
+                        "Desde lo c\u00e1lido de lo propio hacia un acto en lejan\u00eda me detiene presente para descubrir"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Martina Mellado Valenzuela",
+                            "fullurl": "https://wiki.ead.pucv.cl/Martina_Mellado_Valenzuela",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Descubrir presente en lejan\u00eda",
+                "fullurl": "https://wiki.ead.pucv.cl/Descubrir_presente_en_lejan%C3%ADa",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Desde lo visible a lo oculto": {
+                "printouts": {
+                    "Nota": [
+                        "Es este preciso momento la perdida del gesto."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Javiera Aranda Reinoso",
+                            "fullurl": "https://wiki.ead.pucv.cl/Javiera_Aranda_Reinoso",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Desde lo visible a lo oculto",
+                "fullurl": "https://wiki.ead.pucv.cl/Desde_lo_visible_a_lo_oculto",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Distancias de Deseos": {
+                "printouts": {
+                    "Nota": [
+                        "La nueva distancia nos trae los viejos deseos, de vernos, de abrazarnos entre una multitud imposible de seres."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Javiera Prado",
+                            "fullurl": "https://wiki.ead.pucv.cl/Javiera_Prado",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Distancias de Deseos",
+                "fullurl": "https://wiki.ead.pucv.cl/Distancias_de_Deseos",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "EL CAMINAR DE LA A\u00d1ORANZA": {
+                "printouts": {
+                    "Nota": [
+                        "Entre trotes y vueltas [\u2026] No importa. El hoy, es el ayer y el ma\u00f1ana."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Camila L\u00f3pez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Camila_L%C3%B3pez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "EL CAMINAR DE LA A\u00d1ORANZA",
+                "fullurl": "https://wiki.ead.pucv.cl/EL_CAMINAR_DE_LA_A%C3%91ORANZA",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "ESPERA": {
+                "printouts": {
+                    "Nota": [
+                        "\u00bfCu\u00e1nto vive la eterna espera?"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Lukas Ulloa",
+                            "fullurl": "https://wiki.ead.pucv.cl/Lukas_Ulloa",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "ESPERA",
+                "fullurl": "https://wiki.ead.pucv.cl/ESPERA",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ecos en quietud": {
+                "printouts": {
+                    "Nota": [
+                        "Su canto, eco del mar, atraviesa la quietud de lo cotidiano"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina L\u00f3pez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_L%C3%B3pez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04988,
+                            "lon": -71.37113
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Ecos en quietud",
+                "fullurl": "https://wiki.ead.pucv.cl/Ecos_en_quietud",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ef\u00edmero": {
+                "printouts": {
+                    "Nota": [
+                        "por entre verdes confines, ef\u00edmeros soles y fulminantes vientos... me detengo y siento aquella luz..."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Marco Garc\u00eda C\u00e1rcamo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Marco_Garc%C3%ADa_C%C3%A1rcamo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -38.7271,
+                            "lon": -72.63317
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Ef\u00edmero",
+                "fullurl": "https://wiki.ead.pucv.cl/Ef%C3%ADmero",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El Multiverso que habita en Mi Mente": {
+                "printouts": {
+                    "Nota": [
+                        "Pensar es lo es todo, y se piensa con la mente. Sin la mente, no somos lo que somos."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Benjamin ter Horst",
+                            "fullurl": "https://wiki.ead.pucv.cl/Benjamin_ter_Horst",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05434,
+                            "lon": -71.35552
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El Multiverso que habita en Mi Mente",
+                "fullurl": "https://wiki.ead.pucv.cl/El_Multiverso_que_habita_en_Mi_Mente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El ahora": {
+                "printouts": {
+                    "Nota": [
+                        "En pausa"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Luciana Jorquera",
+                            "fullurl": "https://wiki.ead.pucv.cl/Luciana_Jorquera",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.92995,
+                            "lon": -71.51861
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El ahora",
+                "fullurl": "https://wiki.ead.pucv.cl/El_ahora",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El caminar en las arenas": {
+                "printouts": {
+                    "Nota": [],
+                    "Autor": [
+                        {
+                            "fulltext": "Fernanda Talamilla Pino",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fernanda_Talamilla_Pino",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04613,
+                            "lon": -71.57109
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El caminar en las arenas",
+                "fullurl": "https://wiki.ead.pucv.cl/El_caminar_en_las_arenas",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El descanso": {
+                "printouts": {
+                    "Nota": [
+                        "La pausa entre un encargo y otro"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Victoria Norambuena Mu\u00f1oz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Victoria_Norambuena_Mu%C3%B1oz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.12083,
+                            "lon": -71.58159
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El descanso",
+                "fullurl": "https://wiki.ead.pucv.cl/El_descanso",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El hacer ilumina": {
+                "printouts": {
+                    "Nota": [
+                        "En medio del encierro, me pregunto,observo, me oriento y se ilumina mi hacer."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Alondra Zamorano Goldrine",
+                            "fullurl": "https://wiki.ead.pucv.cl/Alondra_Zamorano_Goldrine",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "El hacer ilumina",
+                "fullurl": "https://wiki.ead.pucv.cl/El_hacer_ilumina",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El intervalo natural entre dos o m\u00e1s cosas que existen en una continuidad": {
+                "printouts": {
+                    "Nota": [
+                        "El espacio que abarca entre columnas, la pausa en el que los fen\u00f3menos surgen a trav\u00e9s del tiempo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Paula Andrea Olmedo Latoja",
+                            "fullurl": "https://wiki.ead.pucv.cl/Paula_Andrea_Olmedo_Latoja",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "El intervalo natural entre dos o m\u00e1s cosas que existen en una continuidad",
+                "fullurl": "https://wiki.ead.pucv.cl/El_intervalo_natural_entre_dos_o_m%C3%A1s_cosas_que_existen_en_una_continuidad",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El megaterio renace": {
+                "printouts": {
+                    "Nota": [
+                        "El esqueleto de piedra es nuevo otra vez"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Jaime Reyes",
+                            "fullurl": "https://wiki.ead.pucv.cl/Jaime_Reyes",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "El megaterio renace",
+                "fullurl": "https://wiki.ead.pucv.cl/El_megaterio_renace",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El palpitar de la m\u00fasica": {
+                "printouts": {
+                    "Nota": [
+                        "Notas y letras se hacen o\u00edr en mi craneo, pero no solo las oigo. Ahora son prisioneras en mi interior, en mi confuso coraz\u00f3n."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Daniel Vera F.",
+                            "fullurl": "https://wiki.ead.pucv.cl/Daniel_Vera_F.",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.74689,
+                            "lon": -70.73818
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El palpitar de la m\u00fasica",
+                "fullurl": "https://wiki.ead.pucv.cl/El_palpitar_de_la_m%C3%BAsica",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El pez se ahoga": {
+                "printouts": {
+                    "Nota": [
+                        "Se ahogaba en la profundidad de la cueva."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Andrea Reinoso",
+                            "fullurl": "https://wiki.ead.pucv.cl/Andrea_Reinoso",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "El pez se ahoga",
+                "fullurl": "https://wiki.ead.pucv.cl/El_pez_se_ahoga",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El regalo de lo que esta ante": {
+                "printouts": {
+                    "Nota": [
+                        "Divagar de certezas crueles"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Sebastian Espinoza",
+                            "fullurl": "https://wiki.ead.pucv.cl/Sebastian_Espinoza",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0579,
+                            "lon": -71.59964
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El regalo de lo que esta ante",
+                "fullurl": "https://wiki.ead.pucv.cl/El_regalo_de_lo_que_esta_ante",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El silencio": {
+                "printouts": {
+                    "Nota": [
+                        "El silencio parece algo lejano dentro de este espacio. Todo se ha vuelto ruido desde que estamos aqu\u00ed."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Salas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Salas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.02737,
+                            "lon": -71.5288
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El silencio",
+                "fullurl": "https://wiki.ead.pucv.cl/El_silencio",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El sol de cada ma\u00f1ana": {
+                "printouts": {
+                    "Nota": [
+                        "Cada d\u00eda el sol nos trae la alegr\u00eda de un nuevo inicio."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "David Jolly",
+                            "fullurl": "https://wiki.ead.pucv.cl/David_Jolly",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.88791,
+                            "lon": -71.50533
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El sol de cada ma\u00f1ana",
+                "fullurl": "https://wiki.ead.pucv.cl/El_sol_de_cada_ma%C3%B1ana",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "El tiempo vuelve a ser infinito": {
+                "printouts": {
+                    "Nota": [
+                        "Un nuevo d\u00eda para descubrirse"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Basti\u00e1n R\u00edos Cer\u00f3n",
+                            "fullurl": "https://wiki.ead.pucv.cl/Basti%C3%A1n_R%C3%ADos_Cer%C3%B3n",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0481,
+                            "lon": -71.5797
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "El tiempo vuelve a ser infinito",
+                "fullurl": "https://wiki.ead.pucv.cl/El_tiempo_vuelve_a_ser_infinito",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "En el silencio": {
+                "printouts": {
+                    "Nota": [
+                        "En el silencio, la brisa marina se escucha soplar los cantos de los p\u00e1jaros resonar y al cerrar los ojos se escuchan las olas romper."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Anais Johnson",
+                            "fullurl": "https://wiki.ead.pucv.cl/Anais_Johnson",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "En el silencio",
+                "fullurl": "https://wiki.ead.pucv.cl/En_el_silencio",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Encuentro en extensi\u00f3n del acto po\u00e9tico": {
+                "printouts": {
+                    "Nota": [
+                        "libertad de lo intangible"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Roberto Tobar",
+                            "fullurl": "https://wiki.ead.pucv.cl/Roberto_Tobar",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Encuentro en extensi\u00f3n del acto po\u00e9tico",
+                "fullurl": "https://wiki.ead.pucv.cl/Encuentro_en_extensi%C3%B3n_del_acto_po%C3%A9tico",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Entre el viento y las aves": {
+                "printouts": {
+                    "Nota": [
+                        "Pocas personas a mi al rededor, el ruido de lo urbano pr\u00e1cticamente no existe, resuenan en mi los diversos cantos de las aves del sector."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Antonia Gonz\u00e1lez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Antonia_Gonz%C3%A1lez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -28.58206,
+                            "lon": -70.80912
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Entre el viento y las aves",
+                "fullurl": "https://wiki.ead.pucv.cl/Entre_el_viento_y_las_aves",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Equilibrio en el tiempo": {
+                "printouts": {
+                    "Nota": [
+                        "Equilibrio del tiempo pr\u00f3ximo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Nicol\u00e1s Flores Mart\u00ednez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Nicol%C3%A1s_Flores_Mart%C3%ADnez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0275,
+                            "lon": -71.55972
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Equilibrio en el tiempo",
+                "fullurl": "https://wiki.ead.pucv.cl/Equilibrio_en_el_tiempo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Esencia contenida": {
+                "printouts": {
+                    "Nota": [
+                        "Anochece y la lluvia cae, \nobservo como se expande su esencia por la ciudad\nmientras noto que la m\u00eda se encuentra contenida\ny envuelta entre paredes"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Mar\u00eda Paz Quiroz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Mar%C3%ADa_Paz_Quiroz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Esencia contenida",
+                "fullurl": "https://wiki.ead.pucv.cl/Esencia_contenida",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Espera contenida en el cambio perpetuo": {
+                "printouts": {
+                    "Nota": [
+                        "Detenci\u00f3n continua a espaldas de un alto y frente a la extensi\u00f3n."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Vicente Guzm\u00e1n",
+                            "fullurl": "https://wiki.ead.pucv.cl/Vicente_Guzm%C3%A1n",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Espera contenida en el cambio perpetuo",
+                "fullurl": "https://wiki.ead.pucv.cl/Espera_contenida_en_el_cambio_perpetuo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Estado en el desierto": {
+                "printouts": {
+                    "Nota": [
+                        "Calma remota en el oasis en medio del desierto"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Carolina Olivares Rojas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Carolina_Olivares_Rojas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Estado en el desierto",
+                "fullurl": "https://wiki.ead.pucv.cl/Estado_en_el_desierto",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Estar circunscrito en la naturaleza": {
+                "printouts": {
+                    "Nota": [
+                        "Permanecer circunscrito en la envolvente de la naturaleza"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca Blanco",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_Blanco",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.62537,
+                            "lon": -70.53597
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Estar circunscrito en la naturaleza",
+                "fullurl": "https://wiki.ead.pucv.cl/Estar_circunscrito_en_la_naturaleza",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Existir finito": {
+                "printouts": {
+                    "Nota": [
+                        "El ser humano y su ligera existencia, tan liviana, que al expirar solo queda un recuerdo de lo que fue, y un anhelo de lo que pudo haber sido."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Maite Correa",
+                            "fullurl": "https://wiki.ead.pucv.cl/Maite_Correa",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.20272,
+                            "lon": -71.56423
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Existir finito",
+                "fullurl": "https://wiki.ead.pucv.cl/Existir_finito",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Extra\u00f1amiento en la tormenta": {
+                "printouts": {
+                    "Nota": [
+                        "Bajo el sonido de la lluvia, la tierra natal y el amor se anhelan"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Sebasti\u00e1n Rubilar Guti\u00e9rrez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Sebasti%C3%A1n_Rubilar_Guti%C3%A9rrez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.01535,
+                            "lon": -71.55003
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Extra\u00f1amiento en la tormenta",
+                "fullurl": "https://wiki.ead.pucv.cl/Extra%C3%B1amiento_en_la_tormenta",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Fluir entre el Presente y el pasado": {
+                "printouts": {
+                    "Nota": [
+                        "Estar anclado al presente y las circunstancias sin ser prisionero de estas. Visitar  el pasado sin quedarse mucho tiempo."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Rut Guyman Puello",
+                            "fullurl": "https://wiki.ead.pucv.cl/Rut_Guyman_Puello",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Fluir entre el Presente y el pasado",
+                "fullurl": "https://wiki.ead.pucv.cl/Fluir_entre_el_Presente_y_el_pasado",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Frase del Acto": {
+                "printouts": {
+                    "Nota": [
+                        "Distancia Po\u00e9tica"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Valentina Cofr\u00e9",
+                            "fullurl": "https://wiki.ead.pucv.cl/Valentina_Cofr%C3%A9",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Frase del Acto",
+                "fullurl": "https://wiki.ead.pucv.cl/Frase_del_Acto",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Fugaz luz envolvente": {
+                "printouts": {
+                    "Nota": [
+                        "Fugaz luz envolvente"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Carla Bejares",
+                            "fullurl": "https://wiki.ead.pucv.cl/Carla_Bejares",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05405,
+                            "lon": -71.40166
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Fugaz luz envolvente",
+                "fullurl": "https://wiki.ead.pucv.cl/Fugaz_luz_envolvente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Grito al olvido": {
+                "printouts": {
+                    "Nota": [
+                        "Los vecinos me recuerdan la soberan\u00eda de una naci\u00f3n pisada."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Camilo Salamanca",
+                            "fullurl": "https://wiki.ead.pucv.cl/Camilo_Salamanca",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Grito al olvido",
+                "fullurl": "https://wiki.ead.pucv.cl/Grito_al_olvido",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Habitar sin tiempo": {
+                "printouts": {
+                    "Nota": [
+                        "No habito d\u00edas ni horas, sino acciones"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Renee Rodo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Renee_Rodo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.03626,
+                            "lon": -71.559
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Habitar sin tiempo",
+                "fullurl": "https://wiki.ead.pucv.cl/Habitar_sin_tiempo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Hallarse en la permanencia de la mirada": {
+                "printouts": {
+                    "Nota": [
+                        "Hallarse en la permanencia de la mirada y otorgar recuerdos a la memoria desde la experiencia"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Carolina Varela",
+                            "fullurl": "https://wiki.ead.pucv.cl/Carolina_Varela",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04608,
+                            "lon": -71.56674
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Hallarse en la permanencia de la mirada",
+                "fullurl": "https://wiki.ead.pucv.cl/Hallarse_en_la_permanencia_de_la_mirada",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Hermetismo": {
+                "printouts": {
+                    "Nota": [
+                        "La quietud del ambiente me distancia de la extensi\u00f3n abierta."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Fernanda Mu\u00f1oz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fernanda_Mu%C3%B1oz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Hermetismo",
+                "fullurl": "https://wiki.ead.pucv.cl/Hermetismo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Horizonte infinito": {
+                "printouts": {
+                    "Nota": [
+                        "Entre las casas y calles el horizonte infinito, un cielo sin fin que te invita a ver m\u00e1s all\u00e1 de lo mostrado"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca \u00f1ancucheo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_%C3%B1ancucheo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Horizonte infinito",
+                "fullurl": "https://wiki.ead.pucv.cl/Horizonte_infinito",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Imaginaci\u00f3n": {
+                "printouts": {
+                    "Nota": [
+                        "Imaginar y crear en el hogar impulsa nuestra creatividad."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Javier Parraguez Pincheira",
+                            "fullurl": "https://wiki.ead.pucv.cl/Javier_Parraguez_Pincheira",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04724,
+                            "lon": -71.61269
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Imaginaci\u00f3n",
+                "fullurl": "https://wiki.ead.pucv.cl/Imaginaci%C3%B3n",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Incertidumbre": {
+                "printouts": {
+                    "Nota": [
+                        "Nuevo vac\u00edo existencial, generado por la adici\u00f3n de informaci\u00f3n dentro de un mundo de posibilidades"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Mart\u00edn Canihuante",
+                            "fullurl": "https://wiki.ead.pucv.cl/Mart%C3%ADn_Canihuante",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Incertidumbre",
+                "fullurl": "https://wiki.ead.pucv.cl/Incertidumbre",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Insurgentes con nuestros calibres": {
+                "printouts": {
+                    "Nota": [
+                        "Ahora somos m\u00e1s libres \u00b6 mi cuerpo, mi decisi\u00f3n. \u00b6 Insurgentes con nuestros calibres, \u00b6 gatillamos cambios y una menci\u00f3n. \u00b6  Amate y deja que tu coraz\u00f3n vibre, \u00b6 somos aliadas por la tradici\u00f3n \u00b6 por necesidad. \u00b6 Luchamos por necesidad todos los d\u00edas \u00b6  adolecemos de m\u00faltiples objetivaciones. \u00b6 Sonoridad solas no podemos. \u00b6 Ahuyenta todas tus frustraciones y miedos, \u00b6 mantente fuerte y firme, \u00b6 \u00f3yelo y levante nuestros credos."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Cristina Cofr\u00e9",
+                            "fullurl": "https://wiki.ead.pucv.cl/Cristina_Cofr%C3%A9",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Insurgentes con nuestros calibres",
+                "fullurl": "https://wiki.ead.pucv.cl/Insurgentes_con_nuestros_calibres",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Intersecci\u00f3n de extensiones": {
+                "printouts": {
+                    "Nota": [
+                        "Tras la ventana una extensi\u00f3n horizontal intersecta la esbeltez vertical de los \u00c1lamos."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Nicol\u00e1s Cort\u00e9s-Monroy",
+                            "fullurl": "https://wiki.ead.pucv.cl/Nicol%C3%A1s_Cort%C3%A9s-Monroy",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Intersecci\u00f3n de extensiones",
+                "fullurl": "https://wiki.ead.pucv.cl/Intersecci%C3%B3n_de_extensiones",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "LLUVIA": {
+                "printouts": {
+                    "Nota": [
+                        "Expectante, \u00bfpausa o fin de la lluvia?"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Camila Silva Vergara",
+                            "fullurl": "https://wiki.ead.pucv.cl/Camila_Silva_Vergara",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "LLUVIA",
+                "fullurl": "https://wiki.ead.pucv.cl/LLUVIA",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La Marea": {
+                "printouts": {
+                    "Nota": [
+                        "La marea va y viene constantemente, al igual que las personas, la marea le va dando lentamente forma a la costa, nosotros le damos forma al lugar de nuestro pasar."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Miriam N\u00fa\u00f1ez Ugarte",
+                            "fullurl": "https://wiki.ead.pucv.cl/Miriam_N%C3%BA%C3%B1ez_Ugarte",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.97172,
+                            "lon": -71.54356
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "La Marea",
+                "fullurl": "https://wiki.ead.pucv.cl/La_Marea",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La Ma\u00f1ana": {
+                "printouts": {
+                    "Nota": [
+                        "Al comenzar el d\u00eda: complacerse en abrir la cortina y la ventana"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Aninat",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Aninat",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La Ma\u00f1ana",
+                "fullurl": "https://wiki.ead.pucv.cl/La_Ma%C3%B1ana",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La Memoria Et\u00e9rea": {
+                "printouts": {
+                    "Nota": [
+                        "Solo existe lo que podemos recordar."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Joaqu\u00edn Fern\u00e1ndez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Joaqu%C3%ADn_Fern%C3%A1ndez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La Memoria Et\u00e9rea",
+                "fullurl": "https://wiki.ead.pucv.cl/La_Memoria_Et%C3%A9rea",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La Sombra del Viento": {
+                "printouts": {
+                    "Nota": [
+                        "El hombre que persegu\u00eda su sombra"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Camila Benavides",
+                            "fullurl": "https://wiki.ead.pucv.cl/Camila_Benavides",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La Sombra del Viento",
+                "fullurl": "https://wiki.ead.pucv.cl/La_Sombra_del_Viento",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La abundancia del todo y lo simple": {
+                "printouts": {
+                    "Nota": [
+                        "la abundancia es una lluvia en villa alemana"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Natalia zelaya",
+                            "fullurl": "https://wiki.ead.pucv.cl/Natalia_zelaya",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05089,
+                            "lon": -71.33863
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "La abundancia del todo y lo simple",
+                "fullurl": "https://wiki.ead.pucv.cl/La_abundancia_del_todo_y_lo_simple",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La aventura del acertar y errar": {
+                "printouts": {
+                    "Nota": [
+                        "La creatividad requiere de prueba y error, debiendo saber que uno puede errar ya que, si uno no est\u00e1 preparado para esta situaci\u00f3n, nunca se podr\u00e1 hacer algo original. Proyectar, construir y que no funcione es aprender."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Francisca Alejandra Silva Pi\u00f1a",
+                            "fullurl": "https://wiki.ead.pucv.cl/Francisca_Alejandra_Silva_Pi%C3%B1a",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La aventura del acertar y errar",
+                "fullurl": "https://wiki.ead.pucv.cl/La_aventura_del_acertar_y_errar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La calidez de la ma\u00f1ana": {
+                "printouts": {
+                    "Nota": [
+                        "La calidez del d\u00eda - de la ma\u00f1ana - en un corto periodo - en el interior"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Constanza Pomodoro",
+                            "fullurl": "https://wiki.ead.pucv.cl/Constanza_Pomodoro",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La calidez de la ma\u00f1ana",
+                "fullurl": "https://wiki.ead.pucv.cl/La_calidez_de_la_ma%C3%B1ana",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La cuna, el refugio": {
+                "printouts": {
+                    "Nota": [
+                        "desconectar(se) para reencontrar(se) -un poquito y a veces."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Paz \u00c1lvarez Schilling",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Paz_%C3%81lvarez_Schilling",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La cuna, el refugio",
+                "fullurl": "https://wiki.ead.pucv.cl/La_cuna,_el_refugio",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La gran traves\u00eda": {
+                "printouts": {
+                    "Nota": [
+                        "La gran traves\u00eda\nte levantas para darle un comienzo\nlos pasos somnolientos sobre el piso liso\nobservando la vista de los planos de color crema\nm\u00e1s pasos dentro del recorrido\nen el cual nos encontramos con un amplio paisaje cotidiano\nun paisaje el cual admiras nuevamente como si fueras un infante reci\u00e9n nacido\n\nLa hoja cae sobre el piso de concreto\nmientras que otra se posa en la ventana del auto estacionado\nya se hace tarde y vuelves al fuego diario del interior\njunto a unos le\u00f1os para generar la hospitalidad nocturna\nponiendo a fin este d\u00eda.\n\nTe levantas nuevamente\nprepar\u00e1ndote para el nuevo comienzo\ny as\u00ed el siguiente paso\nestar\u00e1s nuevamente en la gran traves\u00eda"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ignacio Leal",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ignacio_Leal",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.92218,
+                            "lon": -71.52146
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "La gran traves\u00eda",
+                "fullurl": "https://wiki.ead.pucv.cl/La_gran_traves%C3%ADa",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La perdida": {
+                "printouts": {
+                    "Nota": [
+                        "La perdida del habito en la permanencia no solicitada"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Michell Diaz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Michell_Diaz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La perdida",
+                "fullurl": "https://wiki.ead.pucv.cl/La_perdida",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La permanencia atemporal": {
+                "printouts": {
+                    "Nota": [
+                        "el mantenerse cuerdo en una rutina ajena al tiempo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Mishki silva",
+                            "fullurl": "https://wiki.ead.pucv.cl/Mishki_silva",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La permanencia atemporal",
+                "fullurl": "https://wiki.ead.pucv.cl/La_permanencia_atemporal",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La tarde": {
+                "printouts": {
+                    "Nota": [
+                        "La tarde"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ignacio Salinas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ignacio_Salinas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La tarde",
+                "fullurl": "https://wiki.ead.pucv.cl/La_tarde",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "La tenue linea": {
+                "printouts": {
+                    "Nota": [
+                        "Entre la quebrada a los pies de un sol de Agosto"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Marcelo Delgado",
+                            "fullurl": "https://wiki.ead.pucv.cl/Marcelo_Delgado",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "La tenue linea",
+                "fullurl": "https://wiki.ead.pucv.cl/La_tenue_linea",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lejan\u00eda": {
+                "printouts": {
+                    "Nota": [
+                        "El mar se escucha pero no se ve, una lejan\u00eda incierta."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Constanza Gallardo Castillo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Constanza_Gallardo_Castillo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.85138,
+                            "lon": -71.48089
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Lejan\u00eda",
+                "fullurl": "https://wiki.ead.pucv.cl/Lejan%C3%ADa",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Libertad": {
+                "printouts": {
+                    "Nota": [
+                        "Recuerdos ef\u00edmeros de una libertad que anhelo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Lia Brown",
+                            "fullurl": "https://wiki.ead.pucv.cl/Lia_Brown",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Libertad",
+                "fullurl": "https://wiki.ead.pucv.cl/Libertad",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lluvia eterna": {
+                "printouts": {
+                    "Nota": [
+                        "Resguardo c\u00e1lido en contemplaci\u00f3n de un sonar reiterativo que invita al reunirse sobre una envolvente comunicativa."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "\u00c1lvaro N\u00fa\u00f1ez",
+                            "fullurl": "https://wiki.ead.pucv.cl/%C3%81lvaro_N%C3%BA%C3%B1ez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.05383,
+                            "lon": -71.58098
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Lluvia eterna",
+                "fullurl": "https://wiki.ead.pucv.cl/Lluvia_eterna",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lo bello de un d\u00eda nublado": {
+                "printouts": {
+                    "Nota": [
+                        "el interior de nuestros hogares parece cobrar m\u00e1s vida, los colores, sabores y aromas parecen estar m\u00e1s presentes, la idea del encierro se hace menos agobiante, estamos lejos del fr\u00edo del exterior, con el privilegio de solo estar contemplando por la ventana su extinci\u00f3n gris."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Catalina Morales Zu\u00f1iga",
+                            "fullurl": "https://wiki.ead.pucv.cl/Catalina_Morales_Zu%C3%B1iga",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Lo bello de un d\u00eda nublado",
+                "fullurl": "https://wiki.ead.pucv.cl/Lo_bello_de_un_d%C3%ADa_nublado",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lo lejano": {
+                "printouts": {
+                    "Nota": [
+                        "Reunirse con lo lejano desde el confinamiento"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Katherine Bustamante Soto",
+                            "fullurl": "https://wiki.ead.pucv.cl/Katherine_Bustamante_Soto",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -31.64253,
+                            "lon": -71.18116
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Lo lejano",
+                "fullurl": "https://wiki.ead.pucv.cl/Lo_lejano",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lo simultaneo": {
+                "printouts": {
+                    "Nota": [
+                        "Lo simult\u00e1neo se da en lo distante"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Iv\u00e1n Ivelic",
+                            "fullurl": "https://wiki.ead.pucv.cl/Iv%C3%A1n_Ivelic",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Lo simultaneo",
+                "fullurl": "https://wiki.ead.pucv.cl/Lo_simultaneo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lo simultaneo en presente": {
+                "printouts": {
+                    "Nota": [
+                        "Perfilado hacia un constante horizonte boscoso."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Diego Apablaza",
+                            "fullurl": "https://wiki.ead.pucv.cl/Diego_Apablaza",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Lo simultaneo en presente",
+                "fullurl": "https://wiki.ead.pucv.cl/Lo_simultaneo_en_presente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Lontananza": {
+                "printouts": {
+                    "Nota": [
+                        "Una visi\u00f3n desde el desierto lejano del d\u00eda a d\u00eda en un clima \u00e1rido"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Robinson Araya N\u00fa\u00f1ez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Robinson_Araya_N%C3%BA%C3%B1ez",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Lontananza",
+                "fullurl": "https://wiki.ead.pucv.cl/Lontananza",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Luz de amanecer": {
+                "printouts": {
+                    "Nota": [
+                        "el silencio del amanecer que se cuela por las ventanas"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Sofia Berthelon",
+                            "fullurl": "https://wiki.ead.pucv.cl/Sofia_Berthelon",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Luz de amanecer",
+                "fullurl": "https://wiki.ead.pucv.cl/Luz_de_amanecer",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Manos": {
+                "printouts": {
+                    "Nota": [
+                        "En estos d\u00edas los pies han perdido su protagonismo habitual. Ya no recorren por largas horas el pavimento ni se entierran en la arena a la orilla del mar. Los dedos articulan cada oraci\u00f3n. El mundo exterior se estanca en un invierno enjaulado narrado por las manos."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Nicol\u00e1s Vallejos Hiriart",
+                            "fullurl": "https://wiki.ead.pucv.cl/Nicol%C3%A1s_Vallejos_Hiriart",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.02974,
+                            "lon": -71.6335
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Manos",
+                "fullurl": "https://wiki.ead.pucv.cl/Manos",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Mar estrellado": {
+                "printouts": {
+                    "Nota": [
+                        "Expectaci\u00f3n de la asunci\u00f3n del mar hacia las estrellas"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Vicente Fern\u00e1ndez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Vicente_Fern%C3%A1ndez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Mar estrellado",
+                "fullurl": "https://wiki.ead.pucv.cl/Mar_estrellado",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Miguel Catalan - Momento Simultaneo": {
+                "printouts": {
+                    "Nota": [
+                        "\"Vivimos el ahora con incertidumbre y esperamos el ma\u00f1ana y esa vacuna con Esperanza\""
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Miguel Catal\u00e1n",
+                            "fullurl": "https://wiki.ead.pucv.cl/Miguel_Catal%C3%A1n",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Miguel Catalan - Momento Simultaneo",
+                "fullurl": "https://wiki.ead.pucv.cl/Miguel_Catalan_-_Momento_Simultaneo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Movimiento Repetitivo del ser": {
+                "printouts": {
+                    "Nota": [
+                        "Cada individuo se expresa al d\u00eda a d\u00eda, por decir de la misma rutina y trayectos dentro del hogar."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ignacio Quiroz Mercado",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ignacio_Quiroz_Mercado",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0373,
+                            "lon": -71.57986
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Movimiento Repetitivo del ser",
+                "fullurl": "https://wiki.ead.pucv.cl/Movimiento_Repetitivo_del_ser",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Navegante": {
+                "printouts": {
+                    "Nota": [
+                        "Refrescando el navegador, procedencia escrita"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Italo spinetto",
+                            "fullurl": "https://wiki.ead.pucv.cl/Italo_spinetto",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.75101,
+                            "lon": -71.19083
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Navegante",
+                "fullurl": "https://wiki.ead.pucv.cl/Navegante",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Nostalgia": {
+                "printouts": {
+                    "Nota": [
+                        "A\u00f1oranza y soledad, extra\u00f1ar a los que est\u00e1n, pero no podemos tocar"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Javiera Maureira GOMEZ",
+                            "fullurl": "https://wiki.ead.pucv.cl/Javiera_Maureira_GOMEZ",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -23.65093,
+                            "lon": -70.3975
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Nostalgia",
+                "fullurl": "https://wiki.ead.pucv.cl/Nostalgia",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Nublado y difuso": {
+                "printouts": {
+                    "Nota": [
+                        "lo distante se desdibuja pero su trascendencia prevalece"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Josefa Herreros",
+                            "fullurl": "https://wiki.ead.pucv.cl/Josefa_Herreros",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Nublado y difuso",
+                "fullurl": "https://wiki.ead.pucv.cl/Nublado_y_difuso",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Observaci\u00f3n Novedosa": {
+                "printouts": {
+                    "Nota": [
+                        "Calma Constante En El Amanecer Tard\u00edo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Williams Olivares",
+                            "fullurl": "https://wiki.ead.pucv.cl/Williams_Olivares",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04434,
+                            "lon": -71.54704
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Observaci\u00f3n Novedosa",
+                "fullurl": "https://wiki.ead.pucv.cl/Observaci%C3%B3n_Novedosa",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Observaci\u00f3n de cuarentena": {
+                "printouts": {
+                    "Nota": [
+                        "El silencio de hogares habitados"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ra\u00fal Castro",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ra%C3%BAl_Castro",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.06311,
+                            "lon": -71.57938
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Observaci\u00f3n de cuarentena",
+                "fullurl": "https://wiki.ead.pucv.cl/Observaci%C3%B3n_de_cuarentena",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Orden Fr\u00eda - Natalia Sep\u00falveda": {
+                "printouts": {
+                    "Nota": [
+                        "La fr\u00eda noche con un ambiente poco ordenado pero colorido, me lleva al viaje de la observaci\u00f3n instant\u00e1nea."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Natalia Sep\u00falveda Guti\u00e9rrez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Natalia_Sep%C3%BAlveda_Guti%C3%A9rrez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Orden Fr\u00eda - Natalia Sep\u00falveda",
+                "fullurl": "https://wiki.ead.pucv.cl/Orden_Fr%C3%ADa_-_Natalia_Sep%C3%BAlveda",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Otros paisajes": {
+                "printouts": {
+                    "Nota": [
+                        "Transito mentalmente paisajes pasados. Abro los ojos y los cerros me abren el cielo en su plena posibilidad."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Laura Aguirre Naretto",
+                            "fullurl": "https://wiki.ead.pucv.cl/Laura_Aguirre_Naretto",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.07001,
+                            "lon": -71.12032
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Otros paisajes",
+                "fullurl": "https://wiki.ead.pucv.cl/Otros_paisajes",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Paciente aprendiz": {
+                "printouts": {
+                    "Nota": [
+                        "Con lentitud y paciencia, con un cansancio que hace pesar, aprende y descubre... Esperando conocer aquello que parece inalcanzable."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Fernanda Bernales",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fernanda_Bernales",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0578,
+                            "lon": -71.42354
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Paciente aprendiz",
+                "fullurl": "https://wiki.ead.pucv.cl/Paciente_aprendiz",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Para encontrarse hay que perderse": {
+                "printouts": {
+                    "Nota": [
+                        "Estos momentos de inflexi\u00f3n son sumamente enriquecedores, permiten que crezcamos. Tenemos la oportunidad de conocernos mejor a nosotros mismos y entre nosotros. Aprender lo mucho que amamos las cosas sencillas: un abrazo, una conversaci\u00f3n, un cigarro en la araucaria. Por \u00faltimo, nos muestra lo que deber\u00edamos cambiar, y lo nuevo a construir."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Eduardo Mackay",
+                            "fullurl": "https://wiki.ead.pucv.cl/Eduardo_Mackay",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Para encontrarse hay que perderse",
+                "fullurl": "https://wiki.ead.pucv.cl/Para_encontrarse_hay_que_perderse",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Pensar el presente": {
+                "printouts": {
+                    "Nota": [
+                        "El mundo luce inm\u00f3vil cuando se mira desde el presente"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Fauve Bellenger",
+                            "fullurl": "https://wiki.ead.pucv.cl/Fauve_Bellenger",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.0305,
+                            "lon": -71.58454
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Pensar el presente",
+                "fullurl": "https://wiki.ead.pucv.cl/Pensar_el_presente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Perderse para encontrar": {
+                "printouts": {
+                    "Nota": [
+                        "En el mar de la incertidumbre, un chaleco salvavidas: un abrazo, una sonrisa."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Eduardo Mackay",
+                            "fullurl": "https://wiki.ead.pucv.cl/Eduardo_Mackay",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Perderse para encontrar",
+                "fullurl": "https://wiki.ead.pucv.cl/Perderse_para_encontrar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Permanecer viniendo": {
+                "printouts": {
+                    "Nota": [
+                        "de la utop\u00eda al espejismo, logramos continuar movi\u00e9ndonos ante nuestra realidad"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "P\u00eda Gonz\u00e1lez",
+                            "fullurl": "https://wiki.ead.pucv.cl/P%C3%ADa_Gonz%C3%A1lez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Permanecer viniendo",
+                "fullurl": "https://wiki.ead.pucv.cl/Permanecer_viniendo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Presencia Urbana": {
+                "printouts": {
+                    "Nota": [
+                        "En el interior escucho lim\u00edtrofe el accionar de la ciudad, entre el murmullo y el viento me conecto con \u00e9l aqu\u00ed y \u00e9l all\u00e1."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Alvaro Espinosa F.",
+                            "fullurl": "https://wiki.ead.pucv.cl/Alvaro_Espinosa_F.",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Presencia Urbana",
+                "fullurl": "https://wiki.ead.pucv.cl/Presencia_Urbana",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Profundidad cristalina": {
+                "printouts": {
+                    "Nota": [
+                        "Lo oculto se hace visible en el virgen recorrido de las aguas"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Eduardo Hidalgo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Eduardo_Hidalgo",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Profundidad cristalina",
+                "fullurl": "https://wiki.ead.pucv.cl/Profundidad_cristalina",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "P\u00f3rtico": {
+                "printouts": {
+                    "Nota": [
+                        "Espacio de retenci\u00f3n"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Patricio C\u00e1raves",
+                            "fullurl": "https://wiki.ead.pucv.cl/Patricio_C%C3%A1raves",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "P\u00f3rtico",
+                "fullurl": "https://wiki.ead.pucv.cl/P%C3%B3rtico",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Que el entendimiento de los hombres brote simult\u00e1neamente hasta que la empat\u00eda nos transporte a otros cuerpos.": {
+                "printouts": {
+                    "Nota": [
+                        "Que el entendimiento de los hombres brote simult\u00e1neamente hasta que la empat\u00eda nos transporte a otros cuerpos."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Soledad Araya",
+                            "fullurl": "https://wiki.ead.pucv.cl/Soledad_Araya",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -35.86988,
+                            "lon": -71.61561
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Que el entendimiento de los hombres brote simult\u00e1neamente hasta que la empat\u00eda nos transporte a otros cuerpos.",
+                "fullurl": "https://wiki.ead.pucv.cl/Que_el_entendimiento_de_los_hombres_brote_simult%C3%A1neamente_hasta_que_la_empat%C3%ADa_nos_transporte_a_otros_cuerpos.",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Rastro": {
+                "printouts": {
+                    "Nota": [
+                        "El paso guardando memoria de su procedencia."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Leonardo Maldonado",
+                            "fullurl": "https://wiki.ead.pucv.cl/Leonardo_Maldonado",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Rastro",
+                "fullurl": "https://wiki.ead.pucv.cl/Rastro",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Re conocerse": {
+                "printouts": {
+                    "Nota": [
+                        "tiempo de re conocerse, conocerse y hacerse propio."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Mar\u00eda Ignacia Santander Serrano",
+                            "fullurl": "https://wiki.ead.pucv.cl/Mar%C3%ADa_Ignacia_Santander_Serrano",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Re conocerse",
+                "fullurl": "https://wiki.ead.pucv.cl/Re_conocerse",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Reencontrar": {
+                "printouts": {
+                    "Nota": [
+                        "Momentos en los que volvemos a retomar el conocer"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Javiera Veliz",
+                            "fullurl": "https://wiki.ead.pucv.cl/Javiera_Veliz",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Reencontrar",
+                "fullurl": "https://wiki.ead.pucv.cl/Reencontrar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Saturaci\u00f3n de lo Cotidiano": {
+                "printouts": {
+                    "Nota": [
+                        "El cotidiano movimiento encerrado tiende a llevar el ojo hacia afuera con frecuencia,en esperanza de habitar lo observado con el pie y no solo con el ojo"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Agust\u00edn Venegas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Agust%C3%ADn_Venegas",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Saturaci\u00f3n de lo Cotidiano",
+                "fullurl": "https://wiki.ead.pucv.cl/Saturaci%C3%B3n_de_lo_Cotidiano",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Sobrepensar y Sobrellevar": {
+                "printouts": {
+                    "Nota": [
+                        "Pensar sobre lo que tenemos ya plasmado, una cabida a llevar un nuevo pensar"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Alonso Viera",
+                            "fullurl": "https://wiki.ead.pucv.cl/Alonso_Viera",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Sobrepensar y Sobrellevar",
+                "fullurl": "https://wiki.ead.pucv.cl/Sobrepensar_y_Sobrellevar",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Sonido": {
+                "printouts": {
+                    "Nota": [
+                        "El sonido de la alegr\u00eda nos llena con su luz"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Enrique Rivadeneira Barrios",
+                            "fullurl": "https://wiki.ead.pucv.cl/Enrique_Rivadeneira_Barrios",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Sonido",
+                "fullurl": "https://wiki.ead.pucv.cl/Sonido",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Sue\u00f1o consciente": {
+                "printouts": {
+                    "Nota": [
+                        "En la penumbra de mi habitaci\u00f3n, la acogedora cama resguarda cuerpo y mente, so\u00f1ando con los ruidos del exterior mientras veo el cielo interior."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Valentina Aguilera Valencia",
+                            "fullurl": "https://wiki.ead.pucv.cl/Valentina_Aguilera_Valencia",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.04885,
+                            "lon": -71.53884
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Sue\u00f1o consciente",
+                "fullurl": "https://wiki.ead.pucv.cl/Sue%C3%B1o_consciente",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Traer el arriba, abajo": {
+                "printouts": {
+                    "Nota": [
+                        "el vasto silencio de la monta\u00f1a nos remueve,\nnada mas basta presenciar la respiraci\u00f3n de su color"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Ayrton Pereira",
+                            "fullurl": "https://wiki.ead.pucv.cl/Ayrton_Pereira",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -34.16192,
+                            "lon": -70.70663
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Traer el arriba, abajo",
+                "fullurl": "https://wiki.ead.pucv.cl/Traer_el_arriba,_abajo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Tras el Cristal": {
+                "printouts": {
+                    "Nota": [
+                        "Ver las aves alejarse, con su vuelo en libertad, mientras yo me quedo en el nido."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Maira Orellana",
+                            "fullurl": "https://wiki.ead.pucv.cl/Maira_Orellana",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Tras el Cristal",
+                "fullurl": "https://wiki.ead.pucv.cl/Tras_el_Cristal",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Un descubrir condicionado en lo profundo": {
+                "printouts": {
+                    "Nota": [
+                        "Revelar lo descubierto desde una nueva visi\u00f3n del mundo."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Daniela Cabezas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Daniela_Cabezas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -32.93048,
+                            "lon": -71.5197
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Un descubrir condicionado en lo profundo",
+                "fullurl": "https://wiki.ead.pucv.cl/Un_descubrir_condicionado_en_lo_profundo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Un esperar interminable": {
+                "printouts": {
+                    "Nota": [
+                        "La espera de que algo suceda, que el \"s\u00f3lo Dios sabe\" o \"el tiempo dir\u00e1\" dejen de ser respuestas v\u00e1lidas."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Patricia Alejandra Cuevas Z\u00fa\u00f1iga",
+                            "fullurl": "https://wiki.ead.pucv.cl/Patricia_Alejandra_Cuevas_Z%C3%BA%C3%B1iga",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Un esperar interminable",
+                "fullurl": "https://wiki.ead.pucv.cl/Un_esperar_interminable",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Un permanecer en la memoria": {
+                "printouts": {
+                    "Nota": [
+                        "El recuerdo aparece"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Gabriela P. Marin",
+                            "fullurl": "https://wiki.ead.pucv.cl/Gabriela_P._Marin",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Un permanecer en la memoria",
+                "fullurl": "https://wiki.ead.pucv.cl/Un_permanecer_en_la_memoria",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Una detenci\u00f3n constante": {
+                "printouts": {
+                    "Nota": [
+                        "El constante mantener de la persona."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Delia Madrid",
+                            "fullurl": "https://wiki.ead.pucv.cl/Delia_Madrid",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "Una detenci\u00f3n constante",
+                "fullurl": "https://wiki.ead.pucv.cl/Una_detenci%C3%B3n_constante",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Una estaci\u00f3n monotona, sin la diverisdad diaria": {
+                "printouts": {
+                    "Nota": [
+                        "La diversidad del d\u00eda a d\u00eda depende de uno o sucumbir a la monoton\u00eda de la rutina oscura."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Martina V\u00e1squez Vi\u00f1ales",
+                            "fullurl": "https://wiki.ead.pucv.cl/Martina_V%C3%A1squez_Vi%C3%B1ales",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.03161,
+                            "lon": -71.53092
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Una estaci\u00f3n monotona, sin la diverisdad diaria",
+                "fullurl": "https://wiki.ead.pucv.cl/Una_estaci%C3%B3n_monotona,_sin_la_diverisdad_diaria",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Ventana": {
+                "printouts": {
+                    "Nota": [
+                        "En la ma\u00f1ana da una luz invernal<br>\nAl medio d\u00eda una luz de verano<br>\nCuando se pone el sol uno nunca sabe<br>\nA la noche siluetas fantasmales"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Martina Garc\u00eda",
+                            "fullurl": "https://wiki.ead.pucv.cl/Martina_Garc%C3%ADa",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.03259,
+                            "lon": -71.57799
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Ventana",
+                "fullurl": "https://wiki.ead.pucv.cl/Ventana",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Vista a las naves": {
+                "printouts": {
+                    "Nota": [
+                        "lo perpendicular de la ciudad permite a las naves verse"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Isabella castillo",
+                            "fullurl": "https://wiki.ead.pucv.cl/Isabella_castillo",
+                            "namespace": 0,
+                            "exists": "",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.00917,
+                            "lon": -71.53993
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Vista a las naves",
+                "fullurl": "https://wiki.ead.pucv.cl/Vista_a_las_naves",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "V\u00ednculo Amarillo": {
+                "printouts": {
+                    "Nota": [
+                        "La extensi\u00f3n amarilla vinculando bordes"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Eduardo Arenas",
+                            "fullurl": "https://wiki.ead.pucv.cl/Eduardo_Arenas",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -34.21208,
+                            "lon": -70.65772
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "V\u00ednculo Amarillo",
+                "fullurl": "https://wiki.ead.pucv.cl/V%C3%ADnculo_Amarillo",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "Y el tiempo se r\u00ede del hombre": {
+                "printouts": {
+                    "Nota": [
+                        "Y los esp\u00edritus se posicionan tras sus queridos, haciendo vig\u00eda de quienes recuerdan."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Natalia Soto V\u00e1squez",
+                            "fullurl": "https://wiki.ead.pucv.cl/Natalia_Soto_V%C3%A1squez",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.12199,
+                            "lon": -71.57666
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "Y el tiempo se r\u00ede del hombre",
+                "fullurl": "https://wiki.ead.pucv.cl/Y_el_tiempo_se_r%C3%ADe_del_hombre",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "\u00bfTiempo? S\u00f3lo estoy bailando con el sol": {
+                "printouts": {
+                    "Nota": [
+                        "Cuando me atrapa el verbo, desaparece mi tiempo \n\n\u00bfC\u00f3mo lo recupero desde el cautiverio?"
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Gabriela Alliendes",
+                            "fullurl": "https://wiki.ead.pucv.cl/Gabriela_Alliendes",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [
+                        {
+                            "lat": -33.03537,
+                            "lon": -71.56937
+                        }
+                    ],
+                    "Imagen": []
+                },
+                "fulltext": "\u00bfTiempo? S\u00f3lo estoy bailando con el sol",
+                "fullurl": "https://wiki.ead.pucv.cl/%C2%BFTiempo%3F_S%C3%B3lo_estoy_bailando_con_el_sol",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            },
+            "\u00c1rbol": {
+                "printouts": {
+                    "Nota": [
+                        "\u00c1rbol que esconde lo distinto."
+                    ],
+                    "Autor": [
+                        {
+                            "fulltext": "Isabel Margarita Reyes",
+                            "fullurl": "https://wiki.ead.pucv.cl/Isabel_Margarita_Reyes",
+                            "namespace": 0,
+                            "exists": "1",
+                            "displaytitle": ""
+                        }
+                    ],
+                    "Posici\u00f3n": [                        {
+                            "lat": -27.17716,
+                            "lon": -69.61251
+                        }],
+                    "Imagen": []
+                },
+                "fulltext": "\u00c1rbol",
+                "fullurl": "https://wiki.ead.pucv.cl/%C3%81rbol",
+                "namespace": 0,
+                "exists": "1",
+                "displaytitle": ""
+            }
+        },
+        "serializer": "SMW\\Serializers\\QueryResultSerializer",
+        "version": 2,
+        "meta": {
+            "hash": "bf2851468bc63370de945a94b1ddc8db",
+            "count": 146,
+            "offset": 0,
+            "source": "",
+            "time": "0.502095"
+        }
+    }
+}
