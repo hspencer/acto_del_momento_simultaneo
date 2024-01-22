@@ -73,7 +73,7 @@ function createObjects() {
 		let thisResult = data.query.results[key];
 		let lat = thisResult.printouts['Posición'][0].lat;
 		let lon = thisResult.printouts['Posición'][0].lon;
-		let author = thisResult.printouts['Autor'][0].fulltext;
+		let author = thisResult.printouts['Autor'][0];
 		let title = thisResult.fulltext;
 		let content = thisResult.printouts['Nota'][0];
 		
